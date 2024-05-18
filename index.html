@@ -163,7 +163,7 @@
         justify-content: center;
         align-items: center;
     }
-    .button-80 {
+    .button-add {
         background: #fff;
         backface-visibility: hidden;
         border-radius: .375rem;
@@ -189,19 +189,19 @@
         touch-action: manipulation;
     }
 
-        .button-80:not(:disabled):hover {
+        .button-add:not(:disabled):hover {
             transform: scale(1.05);
         }
 
-        .button-80:not(:disabled):hover:active {
+        .button-add:not(:disabled):hover:active {
             transform: scale(1.05) translateY(.125rem);
         }
 
-        .button-80:focus {
+        .button-add:focus {
             outline: 0 solid transparent;
         }
 
-        .button-80:focus:before {
+        .button-add:focus:before {
             content: "";
             left: calc(-1*.375rem);
             pointer-events: none;
@@ -211,15 +211,15 @@
             user-select: none;
         }
 
-        .button-80:focus:not(:focus-visible) {
+        .button-add:focus:not(:focus-visible) {
             outline: 0 solid transparent;
         }
 
-        .button-80:focus:not(:focus-visible):before {
+        .button-add:focus:not(:focus-visible):before {
             border-width: 0;
         }
 
-        .button-80:not(:disabled):active {
+        .button-add:not(:disabled):active {
             transform: translateY(.125rem);
         }
 
@@ -325,7 +325,7 @@
             </div>
         </div>
     </div>
-    <div class="products container mt-5">
+    <div class="products container mt-5 bg-white">
         <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4">
@@ -335,21 +335,7 @@
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                         <div class="price">
                             <strong>$19.99</strong>
-                            <a class="button-80" href="#" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Duplicate and customize the following blocks as needed for more products -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/Red_and_White_Rose.png" class="card-img-top" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Title</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price">
-                            <strong>$19.99</strong>
-                            <a class="button-80" href="#" role="button">Add to Cart</a>
+                            <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -362,7 +348,20 @@
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                         <div class="price">
                             <strong>$19.99</strong>
-                            <a class="button-80" href="#" role="button">Add to Cart</a>
+                            <a class="button-add" href="#" role="button">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/Red_and_White_Rose.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Title</h5>
+                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
+                        <div class="price">
+                            <strong>$19.99</strong>
+                            <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
                 </div>
