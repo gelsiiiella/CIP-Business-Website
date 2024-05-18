@@ -48,12 +48,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 400px;
 
         }
         .main h1{
             font-family: 'Ms Madi', cursive;
-            font-size: 80px;
+            font-size: 100px;
         }
         .container-md {
             max-width: 1000px; 
@@ -226,11 +226,14 @@
         .price {
             display: flex;
             align-items: center;
-            margin-left: 67px;
+            margin-left: 50px;
         }
 
         .price > * {
-            margin-left: 15px;
+            margin-left: 20px;
+        }
+        a{
+            font-family: 'Freeman',sans-serif;
         }
 
    
@@ -251,11 +254,10 @@
 </head>
 <body>
     <div class="container-fluid">
-    <img class="deco img-fluid" src="assets/Deco-Sunflower-Cropped.png" width="300">
+    <!-- <img class="deco img-fluid" src="assets/Deco-Sunflower-Cropped.png" width="300"> -->
     <header>
         <div class="head container-md bg-transparent p-3">
-            <a class="navbar-brand" href="#"><img src="assets/Crafted by Win - MAIN.png" width="100"></a>
-            <nav class="navbar sticky-top navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -298,6 +300,8 @@
     </header>
     <div class="main container-fluid px-0">
         <div class="container text-center">
+            <a class="navbar-brand" href="#"><img src="assets/Crafted by Win - MAIN.png" width="120"></a>
+            <br>
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <h1 class="text-md-center handwriting-animation">Win the hearts of your</h1>
@@ -326,41 +330,44 @@
             </div>
         </div>
     </div>
+    <div class="container-md text-center my-4">
+        <h1>BEST SELLERS</h1>
+    </div>
     <div class="products container mt-5 bg-white">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card mb-4">
-                    <img src="assets/Red_and_White_Rose.png" class="card-img-top" alt="Product Image">
+                    <img src="assets/Red and White Rose.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Title</h5>
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price">
+                        <div class="price d-flex justify-content-between align-items-center">
                             <strong>$19.99</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card mb-4">
-                    <img src="assets/Red_and_White_Rose.png" class="card-img-top" alt="Product Image">
+                    <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Title</h5>
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price">
+                        <div class="price d-flex justify-content-between align-items-center">
                             <strong>$19.99</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card mb-4">
-                    <img src="assets/Red_and_White_Rose.png" class="card-img-top" alt="Product Image">
+                    <img src="assets/Tulips_Bouquet-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Product Title</h5>
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price">
+                        <div class="price d-flex justify-content-between align-items-center">
                             <strong>$19.99</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
