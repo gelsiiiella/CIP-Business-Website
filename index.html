@@ -41,6 +41,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: -150px;
         }
         .main h1{
             font-family: 'Ms Madi', cursive;
@@ -98,19 +99,23 @@
         }
         @keyframes handwriting {
             from {
-                width: 0;
+                width: 0.5%;
             }
             to {
                 width: 100%;
             }
         }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #F3CA52; }
+        }
 
         .handwriting-animation {
             overflow: hidden;
             white-space: nowrap;
-            animation: handwriting 4s steps(50) forwards;
+            animation: handwriting 5s steps(40, end), blink-caret .5s step-end infinite;
             border-right: 2px solid #000; 
-            padding-right: 5px; 
+            padding-right: 10px; 
         }
 
 
@@ -166,11 +171,9 @@
     </header>
     <div class="main">
         <div class="container-md">
-            <h1 class="handwriting-animation">Win the hearts of your loved ones</h1>
+            <h1 class="handwriting-animation">Win the hearts of your loved ones </h1>
         </div>
     </div>
-    <script>
     
-    </script>
 </body>
 </html>
