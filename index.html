@@ -53,7 +53,7 @@
         }
         .main h1{
             font-family: 'Ms Madi', cursive;
-            font-size: 100px;
+            font-size: 80px;
         }
         .container-md {
             max-width: 1000px; 
@@ -160,6 +160,7 @@
         align-items: center;
         margin-top:-100px;
         margin-left: 59px;
+        margin-bottom: 10px;
     }
     .button-add {
         background: #fff;
@@ -235,6 +236,22 @@
         a{
             font-family: 'Freeman',sans-serif;
         }
+        .product h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
+        .goal{
+            margin-top:200px ;
+            margin-bottom: 150px;
+        }
+        .obj h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
 
    
 
@@ -254,7 +271,6 @@
 </head>
 <body>
     <div class="container-fluid">
-    <!-- <img class="deco img-fluid" src="assets/Deco-Sunflower-Cropped.png" width="300"> -->
     <header>
         <div class="head container-md bg-transparent p-3">
             <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
@@ -282,8 +298,8 @@
                                     About
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About the Business</a></li>
                                     <li><a class="dropdown-item" href="#">Personnel</a></li>
-                                    <li><a class="dropdown-item" href="#">Valuing Environment</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -300,11 +316,11 @@
     </header>
     <div class="main container-fluid px-0">
         <div class="container text-center">
-            <a class="navbar-brand" href="#"><img src="assets/Crafted by Win - MAIN.png" width="120"></a>
+            <a class="navbar-brand" href="#"><img src="assets/CbW-StickerIMG.png" width="120"></a>
             <br>
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <h1 class="text-md-center handwriting-animation">Win the hearts of your</h1>
+                    <h1 class="text-md-center">Win the hearts of your</h1>
                     <div class="col-md-12">
                         <div class="container1 row-md">
                             <div class="animation">
@@ -330,8 +346,9 @@
             </div>
         </div>
     </div>
-    <div class="container-md text-center my-4">
-        <h1>BEST SELLERS</h1>
+    </div>
+    <div class="product container-md text-center my-4">
+        <h1 class="text-md-center">BEST SELLERS</h1>
     </div>
     <div class="products container mt-5 bg-white">
         <div class="row">
@@ -339,10 +356,10 @@
                 <div class="card mb-4">
                     <img src="assets/Red and White Rose.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
-                        <h5 class="card-title">Product Title</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
+                        <h5 class="card-title">Red and White Roses</h5>
+                        <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
                         <div class="price d-flex justify-content-between align-items-center">
-                            <strong>$19.99</strong>
+                            <strong>PHP 320.00</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
@@ -352,10 +369,10 @@
                 <div class="card mb-4">
                     <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
-                        <h5 class="card-title">Product Title</h5>
+                        <h5 class="card-title">Sunshine Bouquet</h5>
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                         <div class="price d-flex justify-content-between align-items-center">
-                            <strong>$19.99</strong>
+                            <strong>PHP 350.00</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
@@ -365,10 +382,10 @@
                 <div class="card mb-4">
                     <img src="assets/Tulips_Bouquet-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
-                        <h5 class="card-title">Product Title</h5>
+                        <h5 class="card-title">Tulips Bouquet</h5>
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                         <div class="price d-flex justify-content-between align-items-center">
-                            <strong>$19.99</strong>
+                            <strong>PHP 220.00</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
                         </div>
                     </div>
@@ -377,26 +394,72 @@
         </div>
     </div>
     
-    <div class="main container-fluid px-0">
+    <div class="goal main container-fluid px-0">
         <div class="container text-center">
             <div class="row">
-                <div class="col-sm-3 bg-info">
-                    <h1>Mission</h1>
-                </div>
-                <div class="col-sm-9 bg-success">
-                    <div class="row">
-                        <div class="col-8 col-sm-6 bg-primary">
-                            <h1>Vision</h1>
-                        </div>
-                        <div class="col-4 col-sm-6 bg-secondary">
-                            Level 2: .col-4 .col-sm-6
-                        </div>
+              <div class="col">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/Preview-CbW-Placards-18x12in.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/Preview-CbW-Placards-18x12in 2.jpg" class="d-block w-100" alt="...">
+                      </div>
                     </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+              <div class="obj col">
+                <h1 class="text-md-center">MISSION | VISION | GOAL </h1>
+                <p style="font-family: 'Freeman',sans-serif;text-align: center;"> <i>Bringing love and smile in every craft.</i> </p>
+                <p>Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple materials into timeless elegance. 
+                <p>With each petal meticulously shaped and every stitch carefully placed, our satin flower handcrafts are imbued with a sense of grace and sophistication.</p> 
+                <p>We believe in the power of beauty to uplift spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight.</p>
+                <p>Our dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care. </p>
+                <p>Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the essence of craftsmanship and the warmth of human touch.</p>
+                
+              </div>
             </div>
         </div>
     </div>
 
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Navigation</h3>
+                    <p class="text-center"> <i class="fa-solid fa-home"></i>Home</p>
+                    <p class="text-center"> <i class="fa-solid fa-envelope"></i>Product
+                        <ul>
+                            <li>Customers' Review</li>
+                            <li>AV/Commercial</li>
+                            <li>Events</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">About</h3>
+                    <p class="text-center"> <i class="fa-solid fa-phone"></i> About the Business</p>
+                    <p class="text-center"> <i class="fa-solid fa-envelope"></i> Personnel</p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center"> <i class="fa-solid fa-phone"></i> +63 905 400 9590</p>
+                    <p class="text-center"> <i class="fa-solid fa-envelope"></i> CraftedbyWin</p>
+                </div>
+                <hr>
+                <p>2024 © CraftedbyWin</p>
+            </div>
+        </div>
+    </footer>
 
       
 
