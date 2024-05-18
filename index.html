@@ -9,6 +9,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
         body {
             margin: 0;
             padding: 0;
@@ -50,7 +51,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 100px;
             /* background: linear-gradient(to right, white, #FDE49E), 
                         url('https://grainy-gradients.vercel.app/noise.svg');
             background-blend-mode: overlay;
@@ -115,26 +116,57 @@
         .head{
             margin-top: -230px;
         }
-        @keyframes handwriting {
-            from {
-                width: 0.5%;
-            }
-            to {
-                width: 100%;
-            }
+        p {
+            text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
         }
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #F3CA52; }
+        .container1 {
+            color: #e5e5e5;
+            font-size: 3rem;
+            text-transform: uppercase;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -350px;
+            font-family: 'Freeman',sans-serif;
+            color:#F3CA52;
         }
 
-        .handwriting-animation {
-            overflow: hidden;
-            white-space: nowrap;
-            animation: handwriting 5s steps(40, end), blink-caret .5s step-end infinite;
-            border-right: 2px solid #000; 
-            padding-right: 10px; 
+        .animation {
+            height:50px;
+            overflow:hidden;
+            margin-left: 1rem;
         }
+
+        .animation > div > div {
+            padding: 0.25rem 0.75rem;
+            height:2.81rem;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+        }
+
+        .animation div:first-child {
+            animation: text-animation 8s infinite;
+        }
+
+       
+
+        @keyframes text-animation {
+            0% {margin-top: 0;}
+            10% {margin-top: 0;}
+            20% {margin-top: -5.62rem;}
+            30% {margin-top: -5.62rem;}
+            40% {margin-top: -11.24rem;}
+            60% {margin-top: -11.24rem;}
+            70% {margin-top: -5.62rem;}
+            80% {margin-top: -5.62rem;}
+            90% {margin-top: 0;}
+            100% {margin-top: 0;}
+        }
+
+     
+        
+       
 
 
 
@@ -187,11 +219,32 @@
             </nav>
         </div>
     </header>
-    <div class="main container-fluid">
-        <div class="container-md">
-            <h1 class="handwriting-animation display-4 display-md-3 display-sm-2">Win the hearts of your loved ones </h1>
+    <div class="main container-fluid px-0">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <h1 class="text-md-center handwriting-animation">Win the hearts of your</h1>
+              <div class="container1">
+                <div class="animation">
+                  <div class="first col-md-12">
+                    <div class="container-md">FRIENDS</div>
+                  </div>
+                  <div class="second col-md-12">
+                    <div class="container-md">RELATIVES</div>
+                  </div>
+                  <div class="third col-md-12">
+                    <div class="container-md">LOVED ONES</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+      
+
+      
+
+</body>
 </body>
 </html>
