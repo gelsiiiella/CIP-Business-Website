@@ -138,22 +138,17 @@
         }
 
         .animation div:first-child {
-            animation: text-animation 8s infinite;
+            animation: text-animation 10s infinite;
         }
 
        
 
         @keyframes text-animation {
-            0% {margin-top: 0;}
-            10% {margin-top: 0;}
-            20% {margin-top: -5.62rem;}
-            30% {margin-top: -5.62rem;}
-            40% {margin-top: -11.24rem;}
-            60% {margin-top: -11.24rem;}
-            70% {margin-top: -5.62rem;}
-            80% {margin-top: -5.62rem;}
-            90% {margin-top: 0;}
-            100% {margin-top: 0;}
+            0%, 10% { margin-top: 0; }
+            20%, 30% { margin-top: -5.62rem; }
+            40%, 60% { margin-top: -11.24rem; }
+            70%, 80% { margin-top: -5.62rem; }
+            90%, 100% { margin-top: 0; }
         }
 
     p {
@@ -235,6 +230,12 @@
                                     <div class="container-md">RELATIVES</div>
                                 </div>
                                 <div class="third col-md-12">
+                                    <div class="container-md">KIDS</div>
+                                </div>
+                                <div class="fourth col-md-12">
+                                    <div class="container-md">WIFE</div>
+                                </div>
+                                <div class="fifth col-md-12">
                                     <div class="container-md">LOVED ONES</div>
                                 </div>
                             </div>
