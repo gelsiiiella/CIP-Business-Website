@@ -5,25 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crafted by Win</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+        .navbar-brand {
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        .navbar-nav {
+            flex: 1;
+            justify-content: center;
+            margin: 0 auto; 
+        }
+        .navbar-nav .nav-item {
+            margin-right: 3rem; 
+        }
+        .shop-icon a {
+            color:#F3CA52;
+        }
+        .main {
+            background-image: url(''); 
+            background-size: cover;
+            background-position: center; 
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-md {
+            max-width: 1000px; 
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-item:hover{
+            text-decoration: underline #F3CA52;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-    </header>
     
+    <header>
+        <div class="container-md bg-transparent p-3">
+            <a class="navbar-brand" href="#"><img src="assets/Crafted by Win - Gray.png" width="100"></a>
+            <nav class="navbar sticky-top navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Customers' Review</a></li>
+                                    <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
+                                    <li><a class="dropdown-item" href="#">Events</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                    <li><a class="dropdown-item" href="#">Valuing Environment</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <div class="shop-icon">
+                                <a href="#"><i class="material-icons">shopping_basket</i></a> 
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container-md">
+            <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png">
+        </div>
+    </div>
 </body>
 </html>
