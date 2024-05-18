@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
         body {
             margin: 0;
             padding: 0;
@@ -25,9 +26,12 @@
         .navbar-nav .nav-item {
             margin-right: 3rem; 
         }
+        .shop-icon {
+            color:#F3CA52;
+            margin-top: 8px;
+        }
         .shop-icon a {
             color:#F3CA52;
-            margin-top: 20px;
         }
         .main {
             background-image: url(''); 
@@ -37,6 +41,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .main h1{
+            font-family: 'Ms Madi', cursive;
+            font-size: 80px;
         }
         .container-md {
             max-width: 1000px; 
@@ -88,6 +96,23 @@
         .head{
             margin-top: -230px;
         }
+        @keyframes handwriting {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        .handwriting-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: handwriting 4s steps(50) forwards;
+            border-right: 2px solid #000; 
+            padding-right: 5px; 
+        }
+
 
 
     </style>
@@ -141,8 +166,11 @@
     </header>
     <div class="main">
         <div class="container-md">
-            <h1>Win the hearts of your loved ones</h1>
+            <h1 class="handwriting-animation">Win the hearts of your loved ones</h1>
         </div>
     </div>
+    <script>
+    
+    </script>
 </body>
 </html>
