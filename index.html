@@ -27,6 +27,7 @@
         }
         .shop-icon a {
             color:#F3CA52;
+            margin-top: 20px;
         }
         .main {
             background-image: url(''); 
@@ -42,16 +43,60 @@
             padding: 20px;
             text-align: center;
         }
-        .nav-item:hover{
-            text-decoration: underline #F3CA52;
+        .nav-item .nav-link {
+            position: relative;
         }
+
+        .nav-item .nav-link::after {
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            bottom: -1px; 
+            left: 0; 
+            background-color: transparent; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .nav-item:hover .nav-link::after {
+            background-color: #F3CA52; 
+        }
+        .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a {
+            color: #333;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f8f9fa;
+        }
+        .nav-item1{
+            margin-right: 20px;
+        }
+        .deco {
+            margin-left: -50px;
+        }
+        .head{
+            margin-top: -230px;
+        }
+
 
     </style>
 </head>
 <body>
-    
+    <div class="container-fluid">
+    <img class="deco img-fluid" src="assets/Deco-Sunflower-Cropped.png" width="300">
     <header>
-        <div class="container-md bg-transparent p-3">
+        <div class="head container-md bg-transparent p-3">
             <a class="navbar-brand" href="#"><img src="assets/Crafted by Win - Gray.png" width="100"></a>
             <nav class="navbar sticky-top navbar-expand-md navbar-light">
                 <div class="container-fluid">
@@ -63,7 +108,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item1 dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
                                 </a>
@@ -73,7 +118,7 @@
                                     <li><a class="dropdown-item" href="#">Events</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item1 dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     About
                                 </a>
@@ -96,7 +141,7 @@
     </header>
     <div class="main">
         <div class="container-md">
-            <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png">
+            <h1>Win the hearts of your loved ones</h1>
         </div>
     </div>
 </body>
