@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted by Win</title>
+    <link rel="icon" type="image/png" href="../assets/CbW-StickerIMG.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--FONTS-->
+    <!--font-family: "Alice", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Adlery Pro', sans-serif;-->
+    <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stars = document.querySelectorAll(".star");
+            const rating = document.getElementById("rating");
+            const reviewText = document.getElementById("review");
+            const submitBtn = document.getElementById("submit");
+            const reviewsContainer = document.getElementById("reviews");
+
+            stars.forEach((star) => {
+                star.addEventListener("click", () => {
+                    const value = parseInt(star.getAttribute("data-value"));
+                    rating.innerText = value;
+
+                    // Remove all existing classes from stars
+                    stars.forEach((s) => s.classList.remove("one",
+                        "two",
+                        "three",
+                        "four",
+                        "five"));
+
+                    // Add the appropriate class to 
+                    // each star based on the selected star's value
+                    stars.forEach((s, index) => {
+                        if (index < value) {
+                            s.classList.add(getStarColorClass(value));
+                        }
+                    });
+
+                    // Remove "selected" class from all stars
+                    stars.forEach((s) => s.classList.remove("selected"));
+                    // Add "selected" class to the clicked star
+                    star.classList.add("selected");
+                });
+            });
+
+            submitBtn.addEventListener("click", () => {
+                const review = reviewText.value;
+                const userRating = parseInt(rating.innerText);
+
+                if (!userRating || !review) {
+                    alert("Please select a rating and provide a review before submitting.");
+                    return;
+                }
+
+                if (userRating > 0) {
+                    const reviewElement = document.createElement("div");
+                    reviewElement.classList.add("review");
+                    reviewElement.innerHTML = `<p><strong>Rating: ${userRating}/5</strong></p><p>${review}</p>`;
+                    reviewsContainer.appendChild(reviewElement);
+
+                    // Reset styles after submitting
+                    reviewText.value = "";
+                    rating.innerText = "0";
+                    stars.forEach((s) => s.classList.remove("one",
+                        "two",
+                        "three",
+                        "four",
+                        "five",
+                        "selected"));
+                }
+            });
+
+            function getStarColorClass(value) {
+                switch (value) {
+                    case 1:
+                        return "one";
+                    case 2:
+                        return "two";
+                    case 3:
+                        return "three";
+                    case 4:
+                        return "four";
+                    case 5:
+                        return "five";
+                    default:
+                        return "";
+                }
+            }
+        });
+    </script>
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+            background: url(../assets/BG-4.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;  
+            margin-top: 270px; 
+        }
+        .navbar-brand {
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        .navbar-nav {
+            flex: 1;
+            justify-content: center;
+            margin: 0 auto; 
+        }
+        .navbar-nav .nav-item {
+            margin-right: 3rem; 
+        }
+        .shop-icon {
+            color:#F3CA52;
+            margin-top: 8px;
+        }
+        .shop-icon a {
+            color:#F3CA52;
+        }
+        .shop-icon a:hover{
+            color:#FF5BAE;
+            transform: scale(2);
+        }
+        .main {
+            background-size: cover;
+            background-position: center; 
+            min-height: 50vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main h1{
+            font-family: 'Ms Madi', cursive;
+            font-size: 80px;
+        }
+        .container-md {
+            max-width: 1000px; 
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-item .nav-link {
+            position: relative;
+        }
+
+        .nav-item .nav-link::after {
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            bottom: -1px; 
+            left: 0; 
+            background-color: transparent; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .nav-item:hover .nav-link::after {
+            background-color: #F3CA52; 
+        }
+        .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a {
+            color: #333;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f7e596;
+        }
+        .nav-item1{
+            margin-right: 20px;
+        }
+        .deco {
+            margin-left: -50px;
+        }
+        .head{
+            margin-top: -230px;
+        }
+        p {
+            text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+        }
+        .container1 {
+            color: #e5e5e5;
+            font-size: 3rem;
+            text-transform: uppercase;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -280px;
+            font-family: 'Freeman',sans-serif;
+            color:#FF5BAE;
+        }
+
+        .animation {
+            height:50px;
+            overflow:hidden;
+            margin-left: 1rem;
+        }
+
+        .animation > div > div {
+            padding: 0.25rem 0.75rem;
+            height:2.81rem;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+        }
+
+        .animation div:first-child {
+            animation: text-animation 10s infinite;
+        }
+
+       
+
+        @keyframes text-animation {
+            0%, 10% { margin-top: 0; }
+            20%, 30% { margin-top: -5.62rem; }
+            40%, 50% { margin-top: -11.24rem; }
+            60%, 70% { margin-top: -16.86rem; }
+            80%, 90% { margin-top: -22.48rem; }
+            100% { margin-top: 0; }
+        }
+
+    p {
+        text-align: justify;
+    }
+    .button-add {
+        background: #fff;
+        backface-visibility: hidden;
+        border-radius: .375rem;
+        border-style: solid;
+        border-width: .125rem;
+        box-sizing: border-box;
+        color: #212121;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Freeman',sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        line-height: 1.3;
+        padding: .875rem 1.125rem;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transform: translateZ(0) scale(1);
+        transition: transform .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+        .button-add:not(:disabled):hover {
+            transform: scale(1.05);
+        }
+
+        .button-add:not(:disabled):hover:active {
+            transform: scale(1.05) translateY(.125rem);
+            color: #fff;
+            background-color: #212121;
+        }
+
+        .button-add:focus {
+            outline: 0 solid transparent;
+        }
+
+        .button-add:focus:before {
+            content: "";
+            left: calc(-1*.375rem);
+            pointer-events: none;
+            position: absolute;
+            top: calc(-1*.375rem);
+            transition: border-radius;
+            user-select: none;
+        }
+
+        .button-add:focus:not(:focus-visible) {
+            outline: 0 solid transparent;
+        }
+
+        .button-add:focus:not(:focus-visible):before {
+            border-width: 0;
+        }
+
+        .button-add:not(:disabled):active {
+            transform: translateY(.125rem);
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .price > * {
+            margin-left: 20px;
+        }
+        a{
+            font-family: 'Freeman',sans-serif;
+        }
+        .product h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
+        .goal{
+            margin-top:200px ;
+            margin-bottom: 150px;
+        }
+        .obj h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
+        .footer {
+            background-color: #fff; 
+            padding: 30px 0;
+        }
+
+        .footer h3 {
+            margin-top: 20px; 
+        }
+
+        .footer p {
+            margin: 5px 0; 
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px; 
+        }
+
+        .social-icons {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block; 
+            margin-right: 10px;
+        }
+
+        .social-icons li:last-child {
+            margin-right: 0; 
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px; 
+        }
+
+        .social-icons a:hover {
+            color: #FF5BAE; 
+        }
+        footer a{
+            text-decoration: none;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#212121;
+        }
+        footer a:hover {
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #F3CA52;
+        }
+        
+        /*Reviews1*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container {
+            padding: 40px 0;
+            color: rgb(1, 1, 1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .clientImage img {
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .reviewItem {
+            padding: 20px;
+            margin: 20px;
+            background-color: #916c8b51;
+            border-radius: 10px;
+            transition: all .2s linear;
+        }
+
+        .reviewItem:hover {
+            border-color: aqua;
+            transform: scale(1.01);
+            box-shadow: 0 0px 5px 0px #cbc0c0;
+        }
+
+        .top ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        article p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-family: system-ui;
+        }
+
+        @media screen and (max-width:700px) {
+            .description {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .reviewItem {
+                margin: 10px;
+            }
+        }
+
+        /*reviews2*/
+        .container-reviews{
+            color: #0e0d0d;
+            background-image: url(../assets/BG-4.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;
+
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        h1{
+            font-family: 'Freeman',sans-serif;
+            color: #F3CA52;
+        }
+        .rating {
+            font-size: 30px;
+            margin: 10px 0;
+            color: #030303;
+        }
+
+        .rating h1{
+            font-family: 'Freeman',sans-serif;
+            color: #F3CA52;
+        }
+
+        .stars {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .star {
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .one {
+            color: rgb(255, 0, 0);
+        }
+
+        .two {
+            color: rgb(255, 106, 0);
+        }
+
+        .three {
+            color: rgb(251, 255, 120);
+        }
+
+        .four {
+            color: rgb(255, 255, 0);
+        }
+
+        .five {
+            color: rgb(24, 159, 14);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #review{
+            font-family: "Alice", serif;
+        }
+
+        .button-30 {
+        align-items: center;
+        appearance: none;
+        background-color: #c4b61dd3;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395A;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Alice", serif;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+        }
+
+        .button-30:focus {
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+
+        .button-30:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        }
+
+        .button-30:active {
+        box-shadow: #3a3a82 0 3px 7px inset;
+        transform: translateY(2px);
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <div class="head container-md bg-transparent p-3">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item1 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item1 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <div class="shop-icon">
+                                    <a href="#"><i class="material-icons">shopping_basket</i></a> 
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="main container-fluid px-0">
+            <div class="container text-center">
+                <a class="navbar-brand" href="#"><img src="../assets/CbW-StickerIMG.png" width="120"></a>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h1 class="text-md-center">Win the hearts of your</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <!-- Main Container for Clients Review -->
+    <div class="container">
+        <h2>Our Happy Clients</h2>
+        <p class="description">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion such as anniversaries, birthdays, Mother's Day, Father's Day, Valentines, Teacher's Day and many more.</p>
+
+        <!-- Clients Review Section -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Clients Review-1 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/bday.jpg" class="me-2">
+                            <span>Sheila</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</p>
+                        <p>Jan 01, 2023</p>
+                    </article>
+                </div>
+            </div>
+            <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/meter.jpg" class="me-2">
+                            <span>Raju Sheoran</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>Jun 15, 2023</p>
+                    </article>
+                </div>
+            </div>
+            <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/mom.jpg" class="me-2">
+                            <span>Raju Sheoran</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>Jan 13, 2023</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--with script-->
+    <div class="container-reviews mt-5 bg-transparent border rounded p-5">
+        <div class="d-flex">
+            <div class="flex-grow-1 mt-1"><hr/></div>
+            <h1 class="mx-4 mb-3">Write a review</h1>
+            <div class="flex-grow-1 mt-1"><hr/></div>
+        </div>
+        <p class="justify-content-center fw-bold">CraftedbyWin is the best-rated handcrafted satin ribbon  flower in the Philippines. Delivering handcrafted flower bouquets and gift boxes to your loved ones all over Metro Manila.</p>
+        <div class="rating">
+            <h1>RATING</h1>
+            <span id="rating">0</span>/5
+        </div>
+        <div class="stars mb-3" id="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <div class="form-group">
+            <label for="review">Share your review:</label>
+            <textarea class="form-control" id="review" rows="3" placeholder="Write your review here" 
+            style="border: solid 2px;"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="button-30 mt-4 mb-3" role="button" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="reviews" id="reviews">
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Navigation</h3>
+                    <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
+                    <p class="text-center"><a href="#"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"> 
+                        <a href="#">Customers' Review</a><br>
+                        <a href="#">AV/Commercial</a><br>
+                        <a href="#">Events</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">About</h3>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                    </ul>
+                    <div class="d-inline-block">
+                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

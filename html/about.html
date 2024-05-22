@@ -8,6 +8,646 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha384-4oV8f8I0O+ZDScd6krS6lVzxS7aojFV/7V5qqZtwLAg7FNEcb6Bb5fP4gQIXwRj3"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--FONTS-->
+    <!--font-family: "Alice", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Adlery Pro', sans-serif;-->
+    <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+            background: url(../assets/BG-4.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;  
+            margin-top: 270px; 
+        }
+        .navbar-brand {
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        .navbar-nav {
+            flex: 1;
+            justify-content: center;
+            margin: 0 auto; 
+        }
+        .navbar-nav .nav-item {
+            margin-right: 3rem; 
+        }
+        .shop-icon {
+            color:#F3CA52;
+            margin-top: 8px;
+        }
+        .shop-icon a {
+            color:#F3CA52;
+        }
+        .shop-icon a:hover{
+            color:#FF5BAE;
+            transform: scale(2);
+        }
+        .main {
+            background-size: cover;
+            background-position: center; 
+            min-height: 50vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main h1{
+            font-family: 'Ms Madi', cursive;
+            font-size: 80px;
+        }
+        .container-md {
+            max-width: 1000px; 
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-item .nav-link {
+            position: relative;
+        }
+
+        .nav-item .nav-link::after {
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            bottom: -1px; 
+            left: 0; 
+            background-color: transparent; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .nav-item:hover .nav-link::after {
+            background-color: #F3CA52; 
+        }
+        .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a {
+            color: #333;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f7e596;
+        }
+        .nav-item1{
+            margin-right: 20px;
+        }
+        .deco {
+            margin-left: -50px;
+        }
+        .head{
+            margin-top: -230px;
+        }
+        p {
+            text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+        }
+        .container1 {
+            color: #e5e5e5;
+            font-size: 3rem;
+            text-transform: uppercase;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -280px;
+            font-family: 'Freeman',sans-serif;
+            color:#FF5BAE;
+        }
+
+        .animation {
+            height:50px;
+            overflow:hidden;
+            margin-left: 1rem;
+        }
+
+        .animation > div > div {
+            padding: 0.25rem 0.75rem;
+            height:2.81rem;
+            margin-bottom: 2.81rem;
+            display:inline-block;
+        }
+
+        .animation div:first-child {
+            animation: text-animation 10s infinite;
+        }
+
+       
+
+        @keyframes text-animation {
+            0%, 10% { margin-top: 0; }
+            20%, 30% { margin-top: -5.62rem; }
+            40%, 50% { margin-top: -11.24rem; }
+            60%, 70% { margin-top: -16.86rem; }
+            80%, 90% { margin-top: -22.48rem; }
+            100% { margin-top: 0; }
+        }
+
+    p {
+        text-align: justify;
+    }
+    .button-add {
+        background: #fff;
+        backface-visibility: hidden;
+        border-radius: .375rem;
+        border-style: solid;
+        border-width: .125rem;
+        box-sizing: border-box;
+        color: #212121;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Freeman',sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        line-height: 1.3;
+        padding: .875rem 1.125rem;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transform: translateZ(0) scale(1);
+        transition: transform .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+        .button-add:not(:disabled):hover {
+            transform: scale(1.05);
+        }
+
+        .button-add:not(:disabled):hover:active {
+            transform: scale(1.05) translateY(.125rem);
+            color: #fff;
+            background-color: #212121;
+        }
+
+        .button-add:focus {
+            outline: 0 solid transparent;
+        }
+
+        .button-add:focus:before {
+            content: "";
+            left: calc(-1*.375rem);
+            pointer-events: none;
+            position: absolute;
+            top: calc(-1*.375rem);
+            transition: border-radius;
+            user-select: none;
+        }
+
+        .button-add:focus:not(:focus-visible) {
+            outline: 0 solid transparent;
+        }
+
+        .button-add:focus:not(:focus-visible):before {
+            border-width: 0;
+        }
+
+        .button-add:not(:disabled):active {
+            transform: translateY(.125rem);
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .price > * {
+            margin-left: 20px;
+        }
+        a{
+            font-family: 'Freeman',sans-serif;
+        }
+        .product h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
+        .goal{
+            margin-top:200px ;
+            margin-bottom: 150px;
+        }
+        .obj h1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 60px;
+        }
+        .footer {
+            background-color: #fff; 
+            padding: 30px 0;
+        }
+
+        .footer h3 {
+            margin-top: 20px; 
+        }
+
+        .footer p {
+            margin: 5px 0; 
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px; 
+        }
+
+        .social-icons {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block; 
+            margin-right: 10px;
+        }
+
+        .social-icons li:last-child {
+            margin-right: 0; 
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px; 
+        }
+
+        .social-icons a:hover {
+            color: #FF5BAE; 
+        }
+        footer a{
+            text-decoration: none;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#212121;
+        }
+        footer a:hover {
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #F3CA52;
+        }
+        
+        /*history*/
+        .text1{
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 30px
+        }
+
+        .text2{
+            font-family: "Alice", serif;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .text3{
+            font-size: 25px;
+            font-family: "Alice", serif;
+        }
+
+        .text_mission{
+            font-family: "Alice", serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #img1{
+            border-radius: 100px 0px 100px 100px;
+            -webkit-border-radius: 100px 0px 100px 100px;
+            -moz-border-radius: 100px 0px 100px 100px;
+            border: 3px solid #f3ca52;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+         #img2{
+            border-radius: 0px 100px 100px 100px;
+            -webkit-border-radius: 0px 100px 100px 100px;
+            -moz-border-radius: 0px 100px 100px 100px;
+            border: 3px solid #f3ca52;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        #img3{
+           border-radius: 30px;
+           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+
+        .gallery {
+            margin: 1px;
+            text-align: center; 
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }
+        
+        .desc {
+            padding: 10px;
+        }
+
+        .checked {
+        color: orange;
+        }
+
+        .button-33 {
+        background-color: #fbf1c2;
+        border-radius: 100px;
+        box-shadow: rgba(187, 51, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 108, 44, 0.15) 0 1px 2px,rgba(187, 113, 44, 0.15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(187, 77, 44, 0.15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+        color: rgb(128, 0, 98);
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        .button-33:hover {
+        box-shadow: rgba(187, 113, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 108, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 123, 0.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+        }
+
+        .backdrop-filter {
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(10, 9, 9, 0.071); 
+            border-radius: 10px;
+            background-image: url(../assets/BG-4.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="head container-md bg-transparent p-3">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item1 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item1 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <div class="shop-icon">
+                                    <a href="#"><i class="material-icons">shopping_basket</i></a> 
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="main container-fluid px-0">
+            <div class="container text-center">
+                <a class="navbar-brand" href="#"><img src="../assets/CbW-StickerIMG.png" width="120"></a>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h1 class="text-md-center">Win the hearts of your</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-fluid">
+        <div>
+            <div class="row m-5"> 
+                <div class="m-3 col-md-12 col-12">
+                    <div class="d-flex">
+                        <h1 class="mx-2 text1">Our story</h1>
+                        <div class="flex-grow-1 mb-2"><hr/></div>
+                    </div>
+                    <h5 class="text3 ps-5">Crafted by Win blossomed into existence as a vibrant start-up enterprise, its petals unfurling on the entrepreneurial landscape with a debut on February 2024. Founded by the visionary Winnie P. Garlan, fueled by passion and creativity, Crafted by Win embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers.</h5>
+                </div>
+                <div class="row col-12">
+                    <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
+                        <img src="../assets/photo_6206094590600134102_y.jpg" class="w-75" id="img1">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="text3">CBW embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers. With a mission to spread love and joy through meticulously crafted floral arrangements, the fledgling business set its sights on becoming a beacon of elegance and thoughtfulness in the Philippines.</p>
+                        <p class="text3">Supported by co-founder Rey-an G. Garlan and a dedicated team of artisans, Crafted by Win quickly gained traction, captivating hearts with its exquisite creations. </p>
+                    </div>
+
+                    <div class="row col-12">
+                        <div class="col-md-8">
+                            <p class="text3">From its humble beginnings, Crafted by Win embraced innovation, blending traditional craftsmanship with contemporary flair to cultivate a signature style that captivated customers across Metro Manila.</p>
+                            <p class="text3">As the petals of success unfurled, Crafted by Win continued to bloom, weaving its way into the tapestry of special moments and celebrations, one satin ribbon flower at a time.</p>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
+                            <img src="../assets/photo_6107267169780875215_y.jpg" class="w-75" id="img2">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 backdrop-filter p-5">
+                <div class="row d-flex justify-content-center"> 
+                    <div class="col-7 col-md col-sm-5 gallery">
+                        <a target="_blank" href="img_5terre.jpg">
+                            <img src="../assets/purple.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_forest.jpg">
+                            <img src="../assets/bday.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_lights.jpg">
+                            <img src="../assets/mom.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_lights.jpg">
+                            <img src="../assets/meter.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-center col-10 mt-4">
+                        <div>
+                            <a href="../html/reviews.html"><button class="button-33" role="button">See all reviews</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="goal main container-fluid px-0 mt-5 ">
+        <div class="container text-center">
+            <div class="row">
+                <div class="obj m-3 col-md-12 col-12">
+                    <h1 class="text-md-center">MISSION | VISION | GOAL </h1>
+                    <p style="font-family: 'Freeman',sans-serif;text-align: center;"> <i>Bringing love and smile in every craft.</i> </p>
+                    <p class="text_mission">Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple
+                    materials into timeless elegance. With each petal meticulously shaped and every stitch carefully placed, our satin
+                    flower handcrafts are imbued with a sense of grace and sophistication. We believe in the power of beauty to uplift
+                    spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight. Our
+                    dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care.
+                    Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the
+                    essence of craftsmanship and the warmth of human touch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Navigation</h3>
+                    <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
+                    <p class="text-center"><a href="#"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"> 
+                        <a href="#">Customers' Review</a><br>
+                        <a href="#">AV/Commercial</a><br>
+                        <a href="#">Events</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">About</h3>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                    </ul>
+                    <div class="d-inline-block">
+                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted by Win</title>
+    <link rel="icon" type="image/png" href="../assets/CbW-StickerIMG.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
      <!--FONTS-->
     <!--font-family: "Alice", serif;-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -632,4 +1272,5 @@
     </footer>
 </body>
 </html>
+
 
