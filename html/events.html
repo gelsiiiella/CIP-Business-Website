@@ -7,6 +7,15 @@
     <link rel="icon" type="image/png" href="../assets/CbW-StickerIMG.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--FONTS-->
+    <!--font-family: "Alice", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Adlery Pro', sans-serif;-->
+    <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
@@ -151,6 +160,14 @@
 
         p {
             text-align: justify;
+            font-family: 'Alice',serif;
+            color:#333;
+            font-size: 22px;
+        }
+        .card-title{
+            font-family: 'Adlery Pro', sans-serif;
+            font-size: 30px;
+            text-align: center;
         }
         .button-add {
             background: #fff;
@@ -319,16 +336,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                        <li><a class="dropdown-item" href="reviews.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -336,12 +353,12 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
-                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnel</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="contacts.html">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -534,33 +551,33 @@
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Navigation</h3>
                     <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
-                    <p class="text-center"><a href="#"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"><a href="products.html"><i class="fa-solid fa-envelope"></i> Product</a></p>
                     <p class="text-center">
-                        <a href="#">Customers' Review</a><br>
-                        <a href="#">AV/Commercial</a><br>
-                        <a href="#">Events</a>
+                        <a href="reviews.html">Customers' Review</a><br>
+                        <a href="commercial.html">AV/Commercial</a><br>
+                        <a href="events.html">Events</a>
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="about.html"><i class="fa-solid fa-phone"></i> About the Business</a></p>
+                    <p class="text-center"> <a href="personnel.html"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
                     <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
             <div class="row mt-4">
                 <div class="col-md-12 text-center">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                        <li><a href="https://www.facebook.com/craftedbywinnie"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="https://www.tiktok.com/@_craftedbywin"><i class="material-icons">tiktok</i></a></li>
                     </ul>
                     <div class="d-inline-block">
-                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                        <p><a href="#" class="text-center" style="font-family: 'Alice',serif;">2024 © CraftedbyWin</a></p>
                     </div>
                 </div>
             </div>
