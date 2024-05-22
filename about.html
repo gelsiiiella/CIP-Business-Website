@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
     <!--font-family: 'Adlery Pro', sans-serif;-->
     <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
@@ -28,9 +30,8 @@
             background-blend-mode: overlay;
             background-size: cover;
             background-repeat: no-repeat; 
-            background-position: center; 
-            height: 100vh; 
-            margin-top: 400px; 
+            background-position: center;  
+            margin-top: 270px; 
         }
         .navbar-brand {
             margin-right: auto;
@@ -310,13 +311,16 @@
         
         /*history*/
         .text1{
-            font-family: "Alice", serif;
-            font-size: 20px;
+            font-family: 'Freeman',sans-serif;
+            font-weight: bold;
+            color:#F3CA52;
+            font-size: 30px
         }
 
         .text2{
-            font-family: 'Adlery Pro', sans-serif;
+            font-family: "Alice", serif;
             font-size: 40px;
+            font-style: italic;
         }
 
         .text3{
@@ -326,81 +330,86 @@
 
         .text_mission{
             font-family: "Alice", serif;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
         }
 
         #img1{
-            border-radius: 100px;
-            border: solid 2px;
-
-            align-self: center;
-            background-color: #512f2f5a;
-            background-image: none;
-            background-position: 0 90%;
-            background-repeat: repeat no-repeat;
-            background-size: 4px 3px;
-            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-            border-style: solid;
-            border-width: 5px;
-            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-            box-sizing: border-box;
-            color: #41403e;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Neucha, sans-serif;
-            font-size: 1rem;
-            line-height: 23px;
-            outline: none;
-            text-decoration: none;
-            transition: all 235ms ease-in-out;
-            border-bottom-left-radius: 15px 255px;
-            border-bottom-right-radius: 225px 15px;
-            border-top-left-radius: 255px 15px;
-            border-top-right-radius: 15px 225px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
+            border-radius: 100px 0px 100px 100px;
+            -webkit-border-radius: 100px 0px 100px 100px;
+            -moz-border-radius: 100px 0px 100px 100px;
+            border: 3px solid #f3ca52;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
 
-        .button-55 {
-            align-self: center;
-            background-color: #fff;
-            background-image: none;
-            background-position: 0 90%;
-            background-repeat: repeat no-repeat;
-            background-size: 4px 3px;
-            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-            border-style: solid;
-            border-width: 2px;
-            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-            box-sizing: border-box;
-            color: #41403e;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Neucha, sans-serif;
-            font-size: 1rem;
-            line-height: 23px;
-            outline: none;
-            padding: .75rem;
-            text-decoration: none;
-            transition: all 235ms ease-in-out;
-            border-bottom-left-radius: 15px 255px;
-            border-bottom-right-radius: 225px 15px;
-            border-top-left-radius: 255px 15px;
-            border-top-right-radius: 15px 225px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
+         #img2{
+            border-radius: 0px 100px 100px 100px;
+            -webkit-border-radius: 0px 100px 100px 100px;
+            -moz-border-radius: 0px 100px 100px 100px;
+            border: 3px solid #f3ca52;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
 
-        .button-55:hover {
-            box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-            transform: translate3d(0, 2px, 0);
+        #img3{
+           border-radius: 30px;
+           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         }
 
-         .button-55:focus {
-            box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+        .gallery {
+            margin: 1px;
+            text-align: center; 
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }
+        
+        .desc {
+            padding: 10px;
+        }
+
+        .checked {
+        color: orange;
+        }
+
+        .button-33 {
+        background-color: #fbf1c2;
+        border-radius: 100px;
+        box-shadow: rgba(187, 51, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 108, 44, 0.15) 0 1px 2px,rgba(187, 113, 44, 0.15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(187, 77, 44, 0.15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+        color: rgb(128, 0, 98);
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        .button-33:hover {
+        box-shadow: rgba(187, 113, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 108, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 123, 0.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+        }
+
+        .backdrop-filter {
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(10, 9, 9, 0.071); 
+            border-radius: 10px;
+            background-image: url(../assets/BG-4.jpg);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;
+
         }
 
     </style>
@@ -417,7 +426,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -457,135 +466,125 @@
                 <div class="row justify-content-center">
                     <div class="col-md-12">
                         <h1 class="text-md-center">Win the hearts of your</h1>
-                        <div class="col-md-12">
-                            <div class="container1 row-md">
-                                <div class="animation">
-                                    <div class="first col-md-12">
-                                        <div class="container-md">FRIENDS</div>
-                                    </div>
-                                    <div class="second col-md-12">
-                                        <div class="container-md">RELATIVES</div>
-                                    </div>
-                                    <div class="third col-md-12">
-                                        <div class="container-md">KIDS</div>
-                                    </div>
-                                    <div class="fourth col-md-12">
-                                        <div class="container-md">WIFE</div>
-                                    </div>
-                                    <div class="fifth col-md-12">
-                                        <div class="container-md">LOVED ONES</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="product container-md text-center my-4">
-        <h1 class="text-md-center">BEST SELLERS</h1>
-    </div>
-    <div class="products container mt-5 bg-white">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Red and White Rose.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Red and White Roses</h5>
-                        <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 320.00</strong>
-                            <a class="button-add" href="#" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Sunshine Bouquet</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 350.00</strong>
-                            <a class="button-add" href="#" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Tulips_Bouquet-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Tulips Bouquet</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 220.00</strong>
-                            <a class="button-add" href="../CIP-Business-Website/html/about.html" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+   
     <div class="container-fluid">
         <div>
             <div class="row m-5"> 
-                <div class="col-md-5 d-flex justify-content-center">
-                    <img src="../assets/download.png" class="w-75" id="img1">
-                </div>
-                <div class="m-3 col-md-6 col-12">
+                <div class="m-3 col-md-12 col-12">
                     <div class="d-flex">
                         <h1 class="mx-2 text1">Our story</h1>
-                        <div class="flex-grow-1 mb-3"><hr/></div>
+                        <div class="flex-grow-1 mb-2"><hr/></div>
                     </div>
-                    <p class="text2">ABOUT CRAFT BY WIN</p>
-                    <h5 class="text3 ps-5">Crafted by Win is the best-rated handcrafted satin ribbon  flower in the Philippines.</h5>
-                    <h5  class="text3 ps-5">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion.</h5>
+                    <h5 class="text3 ps-5">Crafted by Win blossomed into existence as a vibrant start-up enterprise, its petals unfurling on the entrepreneurial landscape with a debut on February 2024. Founded by the visionary Winnie P. Garlan, fueled by passion and creativity, Crafted by Win embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers.</h5>
+                </div>
+                <div class="row col-12">
+                    <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
+                        <img src="../assets/photo_6206094590600134102_y.jpg" class="w-75" id="img1">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="text3">CBW embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers. With a mission to spread love and joy through meticulously crafted floral arrangements, the fledgling business set its sights on becoming a beacon of elegance and thoughtfulness in the Philippines.</p>
+                        <p class="text3">Supported by co-founder Rey-an G. Garlan and a dedicated team of artisans, Crafted by Win quickly gained traction, captivating hearts with its exquisite creations. </p>
+                    </div>
 
-                    <div class="d-flex justify-content-end col-10 mt-4">
+                    <div class="row col-12">
+                        <div class="col-md-8">
+                            <p class="text3">From its humble beginnings, Crafted by Win embraced innovation, blending traditional craftsmanship with contemporary flair to cultivate a signature style that captivated customers across Metro Manila.</p>
+                            <p class="text3">As the petals of success unfurled, Crafted by Win continued to bloom, weaving its way into the tapestry of special moments and celebrations, one satin ribbon flower at a time.</p>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
+                            <img src="../assets/photo_6107267169780875215_y.jpg" class="w-75" id="img2">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 backdrop-filter p-5">
+                <div class="row d-flex justify-content-center"> 
+                    <div class="col-7 col-md col-sm-5 gallery">
+                        <a target="_blank" href="img_5terre.jpg">
+                            <img src="../assets/purple.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_forest.jpg">
+                            <img src="../assets/bday.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_lights.jpg">
+                            <img src="../assets/mom.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="col-7 col-md-3 col-sm-5 gallery">
+                        <a target="_blank" href="img_lights.jpg">
+                            <img src="../assets/meter.jpg" class="w-75 p-2" id="img3">
+                        </a>
+                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-center col-10 mt-4">
                         <div>
-                            <a href="about.html"><button class="button-55" role="button">Learn more</button></a>
+                            <a href="../html/about.html"><button class="button-33" role="button">Learn more</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
     
-    <div class="goal main container-fluid px-0">
+    <div class="goal main container-fluid px-0 mt-5 ">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/Preview-CbW-Placards-18x12in.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/Preview-CbW-Placards-18x12in 2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="obj col-lg-6 col-12">
+                <div class="obj m-3 col-md-12 col-12">
                     <h1 class="text-md-center">MISSION | VISION | GOAL </h1>
                     <p style="font-family: 'Freeman',sans-serif;text-align: center;"> <i>Bringing love and smile in every craft.</i> </p>
-                    <p class="text_mission">Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple materials into timeless elegance. 
-                    <p class="text_mission">With each petal meticulously shaped and every stitch carefully placed, our satin flower handcrafts are imbued with a sense of grace and sophistication.</p> 
-                    <p class="text_mission">We believe in the power of beauty to uplift spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight.</p>
-                    <p class="text_mission">Our dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care. </p>
-                    <p class="text_mission">Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the essence of craftsmanship and the warmth of human touch.</p>
+                    <p class="text_mission">Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple
+                    materials into timeless elegance. With each petal meticulously shaped and every stitch carefully placed, our satin
+                    flower handcrafts are imbued with a sense of grace and sophistication. We believe in the power of beauty to uplift
+                    spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight. Our
+                    dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care.
+                    Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the
+                    essence of craftsmanship and the warmth of human touch.</p>
                 </div>
             </div>
         </div>
