@@ -392,7 +392,7 @@
                             <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 320.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="320.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 350.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="350.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 220.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="220.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -446,7 +446,7 @@
                             <p class="card-text"><i><b>Choco mucho bouquet</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 180.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="180.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -459,7 +459,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 180.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="180.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -487,7 +487,7 @@
                             <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -500,7 +500,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -526,7 +526,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -539,7 +539,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -552,7 +552,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -565,7 +565,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -573,6 +573,55 @@
             </div>
         </div>
     </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Cart Total</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Total Price: <span id="totalPrice"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        let totalPrice = 0;
+    
+        // Function to update the total price
+        function updateTotalPrice() {
+            let totalPriceSpan = document.getElementById('totalPrice');
+            totalPriceSpan.textContent = totalPrice.toFixed(2);
+        }
+    
+        // Function to handle add to cart button click
+        function addToCart(price) {
+            totalPrice += parseFloat(price); // Add the price to total
+            updateTotalPrice(); // Update the total price in the modal
+    
+            // Show modal
+            let cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+            cartModal.show();
+        }
+    
+        // Event listeners for add to cart buttons
+        document.querySelectorAll('.button-add').forEach(item => {
+            item.addEventListener('click', event => {
+                addToCart(item.getAttribute('data-price'));
+            });
+        });
+    </script>
+    
+
+
     
     <!-- FOOTER -->
     <footer>
