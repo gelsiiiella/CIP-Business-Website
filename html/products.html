@@ -301,6 +301,77 @@
         .social-icons a:hover {
             color: #FF5BAE; 
         }
+        .modal-content {
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f6f8f9, #eaeff3);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            border-bottom: none;
+            background-color: #f7fafc;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .modal-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .btn-close {
+            color: #000;
+            opacity: 0.8;
+        }
+
+        .btn-close:hover {
+            opacity: 1;
+        }
+
+        .modal-body {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .modal-body p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        #totalPrice {
+            font-weight: bold;
+            color: #ff5bae;
+        }
+
+        .modal-footer {
+            border-top: none;
+            justify-content: center;
+            background-color: #f7fafc;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .btn-secondary, .btn-primary, .btn-danger, .btn-success {
+            border-color: #ff5bae;
+        }
+
+        .btn-secondary {
+            background-color: #ff5bae;
+            color: #fff;
+        }
+
+        .btn-primary, .btn-success {
+            background-color: #28a745; /* Bootstrap success color */
+        }
+
+        .btn-danger {
+            background-color: #dc3545; /* Bootstrap danger color */
+        }
+
+        .btn-secondary:hover, .btn-primary:hover, .btn-danger:hover, .btn-success:hover {
+            opacity: 0.9;
+        }
         footer a{
             text-decoration: none;
             font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -339,6 +410,7 @@
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../html/products.html">Products</a></li>
                                         <li><a class="dropdown-item" href="reviews.html">Customers' Review</a></li>
                                         <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
                                         <li><a class="dropdown-item" href="events.html">Events</a></li>
@@ -408,7 +480,7 @@
                             <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 320.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="320.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="320.00" data-name="Red and White Rose">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -421,7 +493,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 350.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="350.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="350.00"  data-name="Sunshine Bouquet" >Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -434,7 +506,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 220.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="220.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="220.00"  data-name="Tulips Bouquet">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -462,7 +534,7 @@
                             <p class="card-text"><i><b>Choco mucho bouquet</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 180.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="180.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="180.00"  data-name="Caramel Bouquet">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -475,7 +547,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 180.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="180.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="180.00"  data-name="White Chocolate Bouquet">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -503,7 +575,7 @@
                             <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single Rose - Black">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -516,7 +588,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single Rose - Blue">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -529,7 +601,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single - Rose Peach">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -542,7 +614,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single - Rose Pink">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -555,7 +627,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single - Rose Purple">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -568,7 +640,7 @@
                             <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                             <div class="price d-flex justify-content-between align-items-center">
                                 <strong>PHP 80.00</strong>
-                                <a class="button-add" href="#" role="button" data-price="80.00">Add to Cart</a>
+                                <a class="button-add" href="#" role="button" data-price="80.00"  data-name="Single Rose - White">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -577,7 +649,7 @@
         </div>
     </section>
 
-    <!-- MODAL -->
+        <!-- MODAL -->
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -586,18 +658,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Total Price: <span id="totalPrice"></span></p>
+                    <p>Total Price: PHP <span id="totalPrice">0.00</span></p>
+                    <div id="receiptContainer"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="viewReceipt()">View Receipt</button>
+                    <button type="button" class="btn btn-danger" onclick="cancelCart()">Cancel</button>
+                    <button type="button" class="btn btn-success" onclick="processPayment()">Payment</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SCRIPTS -->
+    
+    <button class="button-add btn btn-success" data-price="10.00">Add Item 1 - $10.00</button>
+    <button class="button-add btn btn-success" data-price="15.00">Add Item 2 - $15.00</button>
+
+   
+    <input type="number" id="itemQuantity" value="1" min="1">
+
+
     <script>
         let totalPrice = 0;
+        let cartItems = [];
     
         // Function to update the total price
         function updateTotalPrice() {
@@ -606,19 +690,71 @@
         }
     
         // Function to handle add to cart button click
-        function addToCart(price) {
-            totalPrice += parseFloat(price); // Add the price to total
-            updateTotalPrice(); // Update the total price in the modal
+        function addToCart(price, quantity, name) {
+            let confirmAdd = confirm('Do you want to add this item to the cart?');
+            if (confirmAdd) {
+                let itemTotal = parseFloat(price) * quantity;
+                totalPrice += itemTotal; // Add the item total to the total price
+                cartItems.push({ price: parseFloat(price), quantity: quantity, itemTotal: itemTotal, name: name });
     
-            // Show modal
-            let cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
-            cartModal.show();
+                updateTotalPrice(); // Update the total price in the modal
+    
+                // Show modal
+                let cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+                cartModal.show();
+                viewReceipt(); // Refresh receipt view
+            }
+        }
+    
+        // Function to view the receipt
+        function viewReceipt() {
+            let receiptContainer = document.getElementById('receiptContainer');
+            receiptContainer.innerHTML = ''; // Clear previous receipt
+    
+            cartItems.forEach((item, index) => {
+                let receiptItem = document.createElement('div');
+                receiptItem.className = 'receipt-item';
+                receiptItem.innerHTML = `${item.name} (PHP ${item.price.toFixed(2)} x ${item.quantity}) = PHP ${item.itemTotal.toFixed(2)}
+                                          <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Remove</button>`;
+                receiptContainer.appendChild(receiptItem);
+            });
+    
+            let total = document.createElement('p');
+            total.innerHTML = `<strong>Total: PHP ${totalPrice.toFixed(2)}</strong>`;
+            receiptContainer.appendChild(total);
+        }
+    
+        // Function to handle item removal from the cart
+        function removeFromCart(index) {
+            totalPrice -= cartItems[index].itemTotal; // Subtract the item total from the total price
+            cartItems.splice(index, 1); // Remove the item from the cartItems array
+            updateTotalPrice(); // Update the total price in the modal
+            viewReceipt(); // Refresh receipt view
+        }
+    
+        // Function to handle payment processing (dummy implementation)
+        function processPayment() {
+            alert('Proceeding to payment. Total amount: PHP ' + totalPrice.toFixed(2));
+            // Here you would typically redirect to a payment gateway or handle the payment process.
+        }
+    
+        // Function to cancel the cart
+        function cancelCart() {
+            if (confirm('Are you sure you want to cancel the cart?')) {
+                cartItems = [];
+                totalPrice = 0;
+                updateTotalPrice();
+                viewReceipt();
+            }
         }
     
         // Event listeners for add to cart buttons
         document.querySelectorAll('.button-add').forEach(item => {
             item.addEventListener('click', event => {
-                addToCart(item.getAttribute('data-price'));
+                let price = item.getAttribute('data-price');
+                let quantity = parseInt(document.getElementById('itemQuantity').value);
+                let name = item.getAttribute('data-name');
+                addToCart(price, quantity, name);
             });
         });
     </script>
