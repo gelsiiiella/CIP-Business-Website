@@ -171,10 +171,10 @@
         border-style: solid;
         border-width: .125rem;
         box-sizing: border-box;
-        color: #212121;
+        color:  #FF5BAE;
         cursor: pointer;
         display: inline-block;
-        font-family: 'Freeman',sans-serif;
+        font-family: Neucha, sans-serif;
         font-size: 0.9rem;
         font-weight: 700;
         letter-spacing: -.01em;
@@ -197,7 +197,7 @@
         .button-add:not(:disabled):hover:active {
             transform: scale(1.05) translateY(.125rem);
             color: #fff;
-            background-color: #212121;
+            background-color:  #FF5BAE;
         }
 
         .button-add:focus {
@@ -237,6 +237,21 @@
         }
         a{
             font-family: 'Freeman',sans-serif;
+        }
+
+        /*best-sellers*/
+        .card-title{
+            font-family: 'Adlery Pro', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        .card-text{
+            font-family:"Alice", serif;
+        }
+        .card img{
+            width:80%;
+            height:auto;
+            margin: auto;
         }
         .product h1{
             font-family: 'Freeman',sans-serif;
@@ -324,12 +339,16 @@
         .text3{
             font-size: 25px;
             font-family: "Alice", serif;
+            text-align: justify;
+        }
+
+        .history{
+            margin-top: 150px;
         }
 
         #img1{
             border-radius: 100px;
             border: solid 2px;
-
             align-self: center;
             background-color: #512f2f5a;
             background-image: none;
@@ -369,13 +388,14 @@
             border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
             border-style: solid;
             border-width: 2px;
-            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+            box-shadow: rgba(202, 142, 224, 0.2) 15px 28px 25px -18px;
             box-sizing: border-box;
             color: #41403e;
             cursor: pointer;
             display: inline-block;
             font-family: Neucha, sans-serif;
             font-size: 1rem;
+            font-weight: 700;
             line-height: 23px;
             outline: none;
             padding: .75rem;
@@ -422,9 +442,9 @@
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                        <li><a class="dropdown-item" href="html/customer_review.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="html/commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="html/events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -438,7 +458,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="html/contacts.html">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -492,7 +512,7 @@
                     <img src="assets/Red and White Rose.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Red and White Roses</h5>
-                        <p class="card-text">There may be many flowers in one's life.....but only <i><b>one rose</b></i></p>
+                        <p class="card-text">A red and white rose bouquet is a classic and elegant arrangement featuring the rich, passionate red roses intermingled with the pure, serene white roses. Symbolizing unity, love, and purity, this stunning bouquet is perfect for romantic gestures, weddings, or any occasion that calls for a beautiful expression of deep emotions and harmony.</b></i></p>
                         <div class="price d-flex justify-content-between align-items-center">
                             <strong>PHP 320.00</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
@@ -505,7 +525,7 @@
                     <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Sunshine Bouquet</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
+                        <p class="card-text">A sunflower-only bouquet is a striking arrangement composed entirely of bright yellow sunflowers with dark centers, symbolizing adoration and positivity. This cheerful bouquet radiates warmth and is perfect for celebrating special occasions or simply brightening someone's day.<br><br></p>
                         <div class="price d-flex justify-content-between align-items-center">
                             <strong>PHP 350.00</strong>
                             <a class="button-add" href="#" role="button">Add to Cart</a>
@@ -518,7 +538,7 @@
                     <img src="assets/Tulips_Bouquet-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">Tulips Bouquet</h5>
-                        <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
+                        <p class="card-text">A tulip bouquet is a delightful arrangement featuring the elegant, cup-shaped blooms of tulips in a variety of vibrant colors. Symbolizing perfect love and cheerfulness, this bouquet adds a touch of sophistication and joy to any occasion, making it an ideal gift for expressing heartfelt emotions or celebrating special moments.</p>
                         <div class="price d-flex justify-content-between align-items-center">
                             <strong>PHP 220.00</strong>
                             <a class="button-add" href="../CIP-Business-Website/html/about.html" role="button">Add to Cart</a>
@@ -529,7 +549,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="history container-fluid">
         <div>
             <div class="row m-5"> 
                 <div class="col-md-5 d-flex justify-content-center">
