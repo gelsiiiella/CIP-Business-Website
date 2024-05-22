@@ -122,34 +122,6 @@
             color:#FF5BAE;
         }
 
-        .animation {
-            height:50px;
-            overflow:hidden;
-            margin-left: 1rem;
-        }
-
-        .animation > div > div {
-            padding: 0.25rem 0.75rem;
-            height:2.81rem;
-            margin-bottom: 2.81rem;
-            display:inline-block;
-        }
-
-        .animation div:first-child {
-            animation: text-animation 10s infinite;
-        }
-
-       
-
-        @keyframes text-animation {
-            0%, 10% { margin-top: 0; }
-            20%, 30% { margin-top: -5.62rem; }
-            40%, 50% { margin-top: -11.24rem; }
-            60%, 70% { margin-top: -16.86rem; }
-            80%, 90% { margin-top: -22.48rem; }
-            100% { margin-top: 0; }
-        }
-
     p {
         text-align: justify;
     }
@@ -247,6 +219,7 @@
             background-color: #fff; 
             padding: 30px 0;
             margin-top: 100px;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer h3 {
@@ -286,6 +259,9 @@
 
         .social-icons a:hover {
             color: #FF5BAE; 
+        }
+        h2 {
+            font-family: 'Alice',serif;
         }
         footer a{
             text-decoration: none;
@@ -334,9 +310,11 @@
 
         #intro{
             color: #FF5BAE;
+            font-family: 'Neucha', sans-serif;
         }
         #introDisplay{
             color: #F3CA52;
+            font-family: 'Freeman',sans-serif;
         }
         #content1{
             margin-top: 80px;
@@ -354,6 +332,18 @@
         #headingIcons{
             font-size: 50px;
         }
+        /*Paragraph*/
+        .d-flex h1{
+            font-family: 'Freeman',sans-serif;
+        }
+        .col-lg-4 p{
+            font-family: 'Alice',serif;
+            font-size: 20px;
+        }
+        .col-lg-8 p{
+            font-family: 'Alice',serif;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -370,16 +360,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                        <li><a class="dropdown-item" href="customer_review.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -387,12 +377,12 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
-                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnel</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="contacts.html">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -415,7 +405,7 @@
         </div>
         <div id="captions" class="d-flex justify-content-around p-3">
             <div class="col-8">
-                <h2 class="text-center" style="color: #F3CA52;">"Bringing love and smile in every craft."</h2>
+                <h2 class="text-center" style="color: #F3CA52;">Bringing love and smile in every craft</h2>
             </div>
         </div>
     </div>
@@ -474,24 +464,24 @@
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="about.html"><i class="fa-solid fa-phone"></i> About the Business</a></p>
+                    <p class="text-center"> <a href="personnel.html"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
                     <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
             <div class="row mt-4">
                 <div class="col-md-12 text-center">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                        <li><a href="https://www.facebook.com/craftedbywinnie"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="https://www.tiktok.com/@_craftedbywin"><i class="material-icons">tiktok</i></a></li>
                     </ul>
                     <div class="d-inline-block">
-                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                        <p><a href="#" class="text-center" style="font-family: 'Alice',serif;">2024 © CraftedbyWin</a></p>
                     </div>
                 </div>
             </div>
