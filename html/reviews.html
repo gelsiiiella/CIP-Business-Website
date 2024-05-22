@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
-        integrity="sha384-4oV8f8I0O+ZDScd6krS6lVzxS7aojFV/7V5qqZtwLAg7FNEcb6Bb5fP4gQIXwRj3"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
      <!--FONTS-->
     <!--font-family: "Alice", serif;-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +17,95 @@
     <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stars = document.querySelectorAll(".star");
+            const rating = document.getElementById("rating");
+            const reviewText = document.getElementById("review");
+            const submitBtn = document.getElementById("submit");
+            const reviewsContainer = document.getElementById("reviews");
+
+            stars.forEach((star) => {
+                star.addEventListener("click", () => {
+                    const value = parseInt(star.getAttribute("data-value"));
+                    rating.innerText = value;
+
+                    // Remove all existing classes from stars
+                    stars.forEach((s) => s.classList.remove("one",
+                        "two",
+                        "three",
+                        "four",
+                        "five"));
+
+                    // Add the appropriate class to 
+                    // each star based on the selected star's value
+                    stars.forEach((s, index) => {
+                        if (index < value) {
+                            s.classList.add(getStarColorClass(value));
+                        }
+                    });
+
+                    // Remove "selected" class from all stars
+                    stars.forEach((s) => s.classList.remove("selected"));
+                    // Add "selected" class to the clicked star
+                    star.classList.add("selected");
+                });
+            });
+
+            submitBtn.addEventListener("click", () => {
+                const review = reviewText.value;
+                const userRating = parseInt(rating.innerText);
+
+                if (!userRating || !review) {
+                    alert("Please select a rating and provide a review before submitting.");
+                    return;
+                }
+
+                if (userRating > 0) {
+                    const reviewElement = document.createElement("div");
+                    reviewElement.classList.add("review");
+                    reviewElement.innerHTML = `<p><strong>Rating: ${userRating}/5</strong></p><p>${review}</p>`;
+                    reviewsContainer.appendChild(reviewElement);
+
+                    // Reset styles after submitting
+                    reviewText.value = "";
+                    rating.innerText = "0";
+                    stars.forEach((s) => s.classList.remove("one",
+                        "two",
+                        "three",
+                        "four",
+                        "five",
+                        "selected"));
+                }
+            });
+
+            function getStarColorClass(value) {
+                switch (value) {
+                    case 1:
+                        return "one";
+                    case 2:
+                        return "two";
+                    case 3:
+                        return "three";
+                    case 4:
+                        return "four";
+                    case 5:
+                        return "five";
+                    default:
+                        return "";
+                }
+            }
+        });
+    </script>
+
+
+
     <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
@@ -316,101 +397,81 @@
             color: #F3CA52;
         }
         
-        /*history*/
-        .text1{
-            font-family: 'Freeman',sans-serif;
-            font-weight: bold;
-            color:#F3CA52;
-            font-size: 30px
+        /*Reviews1*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
         }
 
-        .text2{
-            font-family: "Alice", serif;
-            font-size: 40px;
-            font-style: italic;
+        .container {
+            padding: 40px 0;
+            color: rgb(1, 1, 1);
         }
 
-        .text3{
-            font-size: 25px;
-            font-family: "Alice", serif;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
-        .text_mission{
-            font-family: "Alice", serif;
-            font-size: 20px;
-            font-weight: 500;
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        #img1{
-            border-radius: 100px 0px 100px 100px;
-            -webkit-border-radius: 100px 0px 100px 100px;
-            -moz-border-radius: 100px 0px 100px 100px;
-            border: 3px solid #f3ca52;
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        .clientImage img {
+            width: 40px;
+            border-radius: 50%;
         }
 
-         #img2{
-            border-radius: 0px 100px 100px 100px;
-            -webkit-border-radius: 0px 100px 100px 100px;
-            -moz-border-radius: 0px 100px 100px 100px;
-            border: 3px solid #f3ca52;
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        }
-
-        #img3{
-           border-radius: 30px;
-           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        }
-
-        .gallery {
-            margin: 1px;
-            text-align: center; 
-        }
-        
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto; 
-        }
-        
-        .desc {
-            padding: 10px;
-        }
-
-        .checked {
-        color: orange;
-        }
-
-        .button-33 {
-        background-color: #fbf1c2;
-        border-radius: 100px;
-        box-shadow: rgba(187, 51, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 108, 44, 0.15) 0 1px 2px,rgba(187, 113, 44, 0.15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(187, 77, 44, 0.15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-        color: rgb(128, 0, 98);
-        cursor: pointer;
-        display: inline-block;
-        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-        padding: 7px 20px;
-        text-align: center;
-        text-decoration: none;
-        transition: all 250ms;
-        border: 0;
-        font-size: 16px;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        }
-
-        .button-33:hover {
-        box-shadow: rgba(187, 113, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 108, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 123, 0.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-        transform: scale(1.05) rotate(-1deg);
-        }
-
-        .backdrop-filter {
-            backdrop-filter: blur(10px); 
-            -webkit-backdrop-filter: blur(10px);
-            background-color: rgba(10, 9, 9, 0.071); 
+        .reviewItem {
+            padding: 20px;
+            margin: 20px;
+            background-color: #916c8b51;
             border-radius: 10px;
+            transition: all .2s linear;
+        }
+
+        .reviewItem:hover {
+            border-color: aqua;
+            transform: scale(1.01);
+            box-shadow: 0 0px 5px 0px #cbc0c0;
+        }
+
+        .top ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .top ul li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        article p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-family: system-ui;
+        }
+
+        @media screen and (max-width:700px) {
+            .description {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .reviewItem {
+                margin: 10px;
+            }
+        }
+
+        /*reviews2*/
+        .container-reviews{
+            color: #0e0d0d;
             background-image: url(../assets/BG-4.jpg);
             background-blend-mode: overlay;
             background-size: cover;
@@ -419,9 +480,116 @@
 
         }
 
+        p{
+            font-size: 20px;
+        }
+
+        h1{
+            font-family: 'Freeman',sans-serif;
+            color: #F3CA52;
+        }
+        .rating {
+            font-size: 30px;
+            margin: 10px 0;
+            color: #030303;
+        }
+
+        .rating h1{
+            font-family: 'Freeman',sans-serif;
+            color: #F3CA52;
+        }
+
+        .stars {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .star {
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .one {
+            color: rgb(255, 0, 0);
+        }
+
+        .two {
+            color: rgb(255, 106, 0);
+        }
+
+        .three {
+            color: rgb(251, 255, 120);
+        }
+
+        .four {
+            color: rgb(255, 255, 0);
+        }
+
+        .five {
+            color: rgb(24, 159, 14);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #review{
+            font-family: "Alice", serif;
+        }
+
+        .button-30 {
+        align-items: center;
+        appearance: none;
+        background-color: #c4b61dd3;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #36395A;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "Alice", serif;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+        }
+
+        .button-30:focus {
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+
+        .button-30:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        }
+
+        .button-30:active {
+        box-shadow: #3a3a82 0 3px 7px inset;
+        transform: translateY(2px);
+        }
+
+    
     </style>
 </head>
 <body>
+
     <div class="container-fluid">
         <header>
             <div class="head container-md bg-transparent p-3">
@@ -479,124 +647,115 @@
         </div>
     </div>
    
-    <div class="container-fluid">
-        <div>
-            <div class="row m-5"> 
-                <div class="m-3 col-md-12 col-12">
-                    <div class="d-flex">
-                        <h1 class="mx-2 text1">Our story</h1>
-                        <div class="flex-grow-1 mb-2"><hr/></div>
-                    </div>
-                    <h5 class="text3 ps-5">Crafted by Win blossomed into existence as a vibrant start-up enterprise, its petals unfurling on the entrepreneurial landscape with a debut on February 2024. Founded by the visionary Winnie P. Garlan, fueled by passion and creativity, Crafted by Win embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers.</h5>
-                </div>
-                <div class="row col-12">
-                    <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
-                        <img src="../assets/photo_6206094590600134102_y.jpg" class="w-75" id="img1">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="text3">CBW embarked on its journey to redefine the artistry of handcrafted satin ribbon flowers. With a mission to spread love and joy through meticulously crafted floral arrangements, the fledgling business set its sights on becoming a beacon of elegance and thoughtfulness in the Philippines.</p>
-                        <p class="text3">Supported by co-founder Rey-an G. Garlan and a dedicated team of artisans, Crafted by Win quickly gained traction, captivating hearts with its exquisite creations. </p>
-                    </div>
-
-                    <div class="row col-12">
-                        <div class="col-md-8">
-                            <p class="text3">From its humble beginnings, Crafted by Win embraced innovation, blending traditional craftsmanship with contemporary flair to cultivate a signature style that captivated customers across Metro Manila.</p>
-                            <p class="text3">As the petals of success unfurled, Crafted by Win continued to bloom, weaving its way into the tapestry of special moments and celebrations, one satin ribbon flower at a time.</p>
-                        </div>
-                        <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
-                            <img src="../assets/photo_6107267169780875215_y.jpg" class="w-75" id="img2">
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 backdrop-filter p-5">
-                <div class="row d-flex justify-content-center"> 
-                    <div class="col-7 col-md col-sm-5 gallery">
-                        <a target="_blank" href="img_5terre.jpg">
-                            <img src="../assets/purple.jpg" class="w-75 p-2" id="img3">
-                        </a>
-                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
-
-                        <h2>Star Rating</h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="col-7 col-md-3 col-sm-5 gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                            <img src="../assets/bday.jpg" class="w-75 p-2" id="img3">
-                        </a>
-                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</div>
-
-                        <h2>Star Rating</h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="col-7 col-md-3 col-sm-5 gallery">
-                        <a target="_blank" href="img_lights.jpg">
-                            <img src="../assets/mom.jpg" class="w-75 p-2" id="img3">
-                        </a>
-                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
-
-                        <h2>Star Rating</h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="col-7 col-md-3 col-sm-5 gallery">
-                        <a target="_blank" href="img_lights.jpg">
-                            <img src="../assets/meter.jpg" class="w-75 p-2" id="img3">
-                        </a>
-                        <div class="desc">𝗙𝗲𝗮𝘁𝘂𝗿𝗶𝗻𝗴: 𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</div>
-
-                        <h2>Star Rating</h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-
-                    <div class="d-flex justify-content-center col-10 mt-4">
-                        <div>
-                            <a href="../html/reviews.html"><button class="button-33" role="button">See all reviews</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-    <div class="goal main container-fluid px-0 mt-5 ">
-        <div class="container text-center">
-            <div class="row">
-                <div class="obj m-3 col-md-12 col-12">
-                    <h1 class="text-md-center">MISSION | VISION | GOAL </h1>
-                    <p style="font-family: 'Freeman',sans-serif;text-align: center;"> <i>Bringing love and smile in every craft.</i> </p>
-                    <p class="text_mission">Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple
-                    materials into timeless elegance. With each petal meticulously shaped and every stitch carefully placed, our satin
-                    flower handcrafts are imbued with a sense of grace and sophistication. We believe in the power of beauty to uplift
-                    spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight. Our
-                    dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care.
-                    Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the
-                    essence of craftsmanship and the warmth of human touch.</p>
+    <!-- Main Container for Clients Review -->
+    <div class="container">
+        <h2>Our Happy Clients</h2>
+        <p class="description">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion such as anniversaries, birthdays, Mother's Day, Father's Day, Valentines, Teacher's Day and many more.</p>
+
+        <!-- Clients Review Section -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Clients Review-1 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/bday.jpg" class="me-2">
+                            <span>Sheila</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</p>
+                        <p>Jan 01, 2023</p>
+                    </article>
+                </div>
+            </div>
+            <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/meter.jpg" class="me-2">
+                            <span>Raju Sheoran</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>Jun 15, 2023</p>
+                    </article>
+                </div>
+            </div>
+            <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="col">
+                <div class="reviewItem">
+                    <div class="top">
+                        <div class="clientImage d-flex align-items-center">
+                            <img src="../assets/mom.jpg" class="me-2">
+                            <span>Raju Sheoran</span>
+                        </div>
+                        <ul>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </ul>
+                    </div>
+                    <article>
+                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>Jan 13, 2023</p>
+                    </article>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--with script-->
+    <div class="container-reviews mt-5 bg-transparent border rounded p-5">
+        <div class="d-flex">
+            <div class="flex-grow-1 mt-1"><hr/></div>
+            <h1 class="mx-4 mb-3">Write a review</h1>
+            <div class="flex-grow-1 mt-1"><hr/></div>
+        </div>
+        <p class="justify-content-center fw-bold">CraftedbyWin is the best-rated handcrafted satin ribbon  flower in the Philippines. Delivering handcrafted flower bouquets and gift boxes to your loved ones all over Metro Manila.</p>
+        <div class="rating">
+            <h1>RATING</h1>
+            <span id="rating">0</span>/5
+        </div>
+        <div class="stars mb-3" id="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <div class="form-group">
+            <label for="review">Share your review:</label>
+            <textarea class="form-control" id="review" rows="3" placeholder="Write your review here" 
+            style="border: solid 2px;"></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="button-30 mt-4 mb-3" role="button" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="reviews" id="reviews">
+        </div>
+    </div>
+
+    
     <footer>
         <div class="container-fluid footer">
             <div class="row">
