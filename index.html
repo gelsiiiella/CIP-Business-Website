@@ -7,6 +7,15 @@
     <link rel="icon" type="image/png" href="assets/CbW-StickerIMG.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--FONTS-->
+    <!--font-family: "Alice", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Adlery Pro', sans-serif;-->
+    <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
@@ -300,6 +309,96 @@
             color: #F3CA52;
         }
 
+        
+        /*history*/
+        .text1{
+            font-family: "Alice", serif;
+            font-size: 20px;
+        }
+
+        .text2{
+            font-family: 'Adlery Pro', sans-serif;
+            font-size: 40px;
+        }
+
+        .text3{
+            font-size: 25px;
+            font-family: "Alice", serif;
+        }
+
+        #img1{
+            border-radius: 100px;
+            border: solid 2px;
+
+            align-self: center;
+            background-color: #512f2f5a;
+            background-image: none;
+            background-position: 0 90%;
+            background-repeat: repeat no-repeat;
+            background-size: 4px 3px;
+            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+            border-style: solid;
+            border-width: 5px;
+            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+            box-sizing: border-box;
+            color: #41403e;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Neucha, sans-serif;
+            font-size: 1rem;
+            line-height: 23px;
+            outline: none;
+            text-decoration: none;
+            transition: all 235ms ease-in-out;
+            border-bottom-left-radius: 15px 255px;
+            border-bottom-right-radius: 225px 15px;
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-55 {
+            align-self: center;
+            background-color: #fff;
+            background-image: none;
+            background-position: 0 90%;
+            background-repeat: repeat no-repeat;
+            background-size: 4px 3px;
+            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+            box-sizing: border-box;
+            color: #41403e;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Neucha, sans-serif;
+            font-size: 1rem;
+            line-height: 23px;
+            outline: none;
+            padding: .75rem;
+            text-decoration: none;
+            transition: all 235ms ease-in-out;
+            border-bottom-left-radius: 15px 255px;
+            border-bottom-right-radius: 225px 15px;
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-55:hover {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+            transform: translate3d(0, 2px, 0);
+        }
+
+         .button-55:focus {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+        }
+
     </style>
 </head>
 <body>
@@ -314,10 +413,17 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
+
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item1 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
                                     <a class="nav-link dropdown-toggle" href="html/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
@@ -331,8 +437,13 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+
                                         <li><a class="dropdown-item" href="html/about.html">About the Business</a></li>
                                         <li><a class="dropdown-item" href="html/personnel.html">Personnel</a></li>
+
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -419,12 +530,37 @@
                         <p class="card-text">This is a short description of the product. It highlights key features and benefits.</p>
                         <div class="price d-flex justify-content-between align-items-center">
                             <strong>PHP 220.00</strong>
-                            <a class="button-add" href="#" role="button">Add to Cart</a>
+                            <a class="button-add" href="../CIP-Business-Website/html/about.html" role="button">Add to Cart</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid">
+        <div>
+            <div class="row m-5"> 
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img src="../assets/download.png" class="w-75" id="img1">
+                </div>
+                <div class="m-3 col-md-6 col-12">
+                    <div class="d-flex">
+                        <h1 class="mx-2 text1">Our story</h1>
+                        <div class="flex-grow-1 mb-3"><hr/></div>
+                    </div>
+                    <p class="text2">ABOUT CRAFT BY WIN</p>
+                    <h5 class="text3 ps-5">Crafted by Win is the best-rated handcrafted satin ribbon  flower in the Philippines.</h5>
+                    <h5  class="text3 ps-5">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion.</h5>
+
+                    <div class="d-flex justify-content-end col-10 mt-4">
+                        <div>
+                            <a href="../html/about.html"><button class="button-55" role="button">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
     
     <div class="goal main container-fluid px-0">
