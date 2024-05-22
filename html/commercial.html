@@ -131,35 +131,29 @@
             margin-top: -280px;
             font-family: 'Freeman',sans-serif;
             color:#FF5BAE;
+            background: url(../assets/BG-4.jpg);
+            background-repeat: no-repeat;
+            
         }
 
         .animation {
             height:50px;
-            overflow:hidden;
             margin-left: 1rem;
+            font-size: 50px;
+            margin-top: -50px;
+            animation:fadeIn 0.5s ease-in-out;
+
+        }
+        .comm{
+            font-size: 80px;
+        }
+        .comm1{
+            font-size: 150px;
+            animation:colorChange 3s infinite ease-in-out;
         }
 
-        .animation > div > div {
-            padding: 0.25rem 0.75rem;
-            height:2.81rem;
-            margin-bottom: 2.81rem;
-            display:inline-block;
-        }
-
-        .animation div:first-child {
-            animation: text-animation 10s infinite;
-        }
 
        
-
-        @keyframes text-animation {
-            0%, 10% { margin-top: 0; }
-            20%, 30% { margin-top: -5.62rem; }
-            40%, 50% { margin-top: -11.24rem; }
-            60%, 70% { margin-top: -16.86rem; }
-            80%, 90% { margin-top: -22.48rem; }
-            100% { margin-top: 0; }
-        }
 
     p {
         text-align: justify;
@@ -308,13 +302,6 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: #F3CA52;
         }
-        h1{
-            font-family: 'Alice',serif;
-            font-size: 90px;
-            text-align: left;
-            margin-left: 270px;
-            animation: fadeIn 0.5s ease-in-out, colorChange 3s infinite ease-in-out;
-        }
         @keyframes fadeIn {
         from {
             opacity: 0;
@@ -339,6 +326,19 @@
             color: lightblue; 
         }
     }
+
+    .backdrop-filter {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px; 
+        }
+
+        .tiktok-container {
+            padding: 30px;
+        }
+
+        .tiktok-embed {
+            margin-bottom: 30px; 
+        }
     
         
 
@@ -397,43 +397,50 @@
             </div>
         </header>
    
-    <div class="container-fluid">
-        <div>
-            <div class="row m-5"> 
-                <div class="m-3 col-md-12 col-12">
-                    <h1>CRAFTED BY WIN <br>IS ON <br>TIKTOK</h1>
-                    
-                </div>
-                <div class="row col-12">
-                   
-                    <div class="row col-12">
-                       
-                        <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
-                            
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <div class="container1 row-md">
+                        <div class="animation">
+                            <div class="first col-md-12">
+                                <div class="comm container-md">Crafted by Win </div>
+                            </div>
+                            <div class="second col-md-12">
+                                <div class="comm1 container-md">TIKTOK</div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
-    </div>
 
+</div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 backdrop-filter p-5">
-                <div class="row d-flex justify-content-center"> 
-                    
-        </div>
-    </div>
-    
-    <div class="goal main container-fluid px-0 mt-5 ">
-        <div class="container text-center">
-            <div class="row">
-                <div class="obj m-3 col-md-12 col-12">
-                    
+            <div class="col-md-10 backdrop-filter p-5">
+                <div class="row d-flex justify-content-center tiktok-container">
+                    <div class="col-md-6">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_craftedbywin/video/7332309627377405189" data-video-id="7332309627377405189" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@_craftedbywin" href="https://www.tiktok.com/@_craftedbywin?refer=embed">@_craftedbywin</a> Work in Progress 🌹🌷🌻 <a title="satinribbonflower" target="_blank" href="https://www.tiktok.com/tag/satinribbonflower?refer=embed">#SatinRibbonFlower</a> <a title="craftedbywin" target="_blank" href="https://www.tiktok.com/tag/craftedbywin?refer=embed">#CraftedbyWin</a> <a title="handmadewithlove" target="_blank" href="https://www.tiktok.com/tag/handmadewithlove?refer=embed">#handmadewithlove</a> <a title="dreambusiness" target="_blank" href="https://www.tiktok.com/tag/dreambusiness?refer=embed">#dreambusiness</a> <a target="_blank" title="♬ Cupid - Rulydows" href="https://www.tiktok.com/music/Cupid-7224054961225893890?refer=embed">♬ Cupid - Rulydows</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_craftedbywin/video/7339861731604253957" data-video-id="7339861731604253957" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@_craftedbywin" href="https://www.tiktok.com/@_craftedbywin?refer=embed">@_craftedbywin</a> 𝑷𝒓𝒂𝒊𝒔𝒆 𝑮𝒐𝒅 𝒘𝒆&#39;𝒗𝒆 𝒕𝒓𝒊𝒆𝒅!!! 🙌✨ Perfect gift for birthdays, graduation gift, and anniversary! 🎁🌷🌹🌻 <a title="craftedbywin" target="_blank" href="https://www.tiktok.com/tag/craftedbywin?refer=embed">#CraftedbyWin</a> <a title="handmadewithlove" target="_blank" href="https://www.tiktok.com/tag/handmadewithlove?refer=embed">#handmadewithlove</a> <a title="handcraftedflowers" target="_blank" href="https://www.tiktok.com/tag/handcraftedflowers?refer=embed">#handcraftedflowers</a> <a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank" title="♬ original sound - TeacherWinnie - CraftedbyWin" href="https://www.tiktok.com/music/original-sound-TeacherWinnie-7339861747736251141?refer=embed">♬ original sound - TeacherWinnie - CraftedbyWin</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_craftedbywin/video/7342395749709188358" data-video-id="7342395749709188358" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@_craftedbywin" href="https://www.tiktok.com/@_craftedbywin?refer=embed">@_craftedbywin</a> <p>🌻💛✨</p> <a target="_blank" title="♬ original sound - TeacherWinnie - CraftedbyWin" href="https://www.tiktok.com/music/original-sound-TeacherWinnie-7342395764174473989?refer=embed">♬ original sound - TeacherWinnie - CraftedbyWin</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_craftedbywin/video/7362195677163572486" data-video-id="7362195677163572486" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@_craftedbywin" href="https://www.tiktok.com/@_craftedbywin?refer=embed">@_craftedbywin</a> I cry a lot. 🤧 <a title="craftedbywin" target="_blank" href="https://www.tiktok.com/tag/craftedbywin?refer=embed">#CraftedbyWin</a> <a title="handcraftedflowers" target="_blank" href="https://www.tiktok.com/tag/handcraftedflowers?refer=embed">#handcraftedflowers</a> <a target="_blank" title="♬ original sound  - CraftedbyWin" href="https://www.tiktok.com/music/original-sound-CraftedbyWin-7362195696125201157?refer=embed">♬ original sound  - CraftedbyWin</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="col-md-6">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_craftedbywin/video/7368809365417118981" data-video-id="7368809365417118981" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@_craftedbywin" href="https://www.tiktok.com/@_craftedbywin?refer=embed">@_craftedbywin</a> Mother&#39;s Day Orders!!!! TYLSM! 🙌🕊️ <a title="craftedbywin" target="_blank" href="https://www.tiktok.com/tag/craftedbywin?refer=embed">#CraftedbyWin</a> <a title="mothersday" target="_blank" href="https://www.tiktok.com/tag/mothersday?refer=embed">#mothersday</a> <a title="mothersday2024" target="_blank" href="https://www.tiktok.com/tag/mothersday2024?refer=embed">#mothersday2024</a> <a title="handcraftedflowers" target="_blank" href="https://www.tiktok.com/tag/handcraftedflowers?refer=embed">#handcraftedflowers</a> <a title="craftersoftiktok" target="_blank" href="https://www.tiktok.com/tag/craftersoftiktok?refer=embed">#craftersoftiktok</a> <a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank" title="♬ bounce (i just wanna dance) - фрози &#38; joyful" href="https://www.tiktok.com/music/bounce-i-just-wanna-dance-7239111762301306881?refer=embed">♬ bounce (i just wanna dance) - фрози &#38; joyful</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <footer>
         <div class="container-fluid footer">

@@ -7,6 +7,15 @@
     <link rel="icon" type="image/png" href="../assets/CbW-StickerIMG.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--FONTS-->
+    <!--font-family: "Alice", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Adlery Pro', sans-serif;-->
+    <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
@@ -20,7 +29,7 @@
             background-repeat: no-repeat; 
             background-position: center; 
             height: 100vh; 
-            margin-top: 200px;
+            margin-top: 250px;
         }
         .navbar-brand {
             margin-right: auto;
@@ -151,6 +160,24 @@
 
         p {
             text-align: justify;
+            font-family: 'Alice',serif;
+            color:#333;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .desc{
+            text-align: justify;
+            font-family: 'Alice',serif;
+            color:#333;
+            font-size: 18px;
+            text-align: justify;
+
+        }
+        .card-title{
+            text-align: center;
+            font-family: 'Adlery Pro', sans-serif;
+            font-size: 30px;
+            color: #FF5BAE;
         }
         .button-add {
             background: #fff;
@@ -214,6 +241,47 @@
             transform: translateY(.125rem);
         }
 
+        .button-55 {
+            align-self: center;
+            background-color: #fff;
+            background-image: none;
+            background-position: 0 90%;
+            background-repeat: repeat no-repeat;
+            background-size: 4px 3px;
+            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: rgba(202, 142, 224, 0.2) 15px 28px 25px -18px;
+            box-sizing: border-box;
+            color: #41403e;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Neucha, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 23px;
+            outline: none;
+            padding: .75rem;
+            text-decoration: none;
+            transition: all 235ms ease-in-out;
+            border-bottom-left-radius: 15px 255px;
+            border-bottom-right-radius: 225px 15px;
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-55:hover {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+            transform: translate3d(0, 2px, 0);
+        }
+
+         .button-55:focus {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+        }
+
         .price {
             display: flex;
             align-items: center;
@@ -245,22 +313,27 @@
         .footer {
             background-color: #fff; 
             padding: 30px 0;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer h3 {
             margin-top: 20px; 
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer p {
             margin: 5px 0; 
+            
         }
 
         .footer ul {
             list-style: none;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer ul li {
             margin-bottom: 5px; 
+            
         }
 
         .social-icons {
@@ -301,6 +374,12 @@
                 margin-top: 250px;
             }
         }
+        .review-card {
+            margin-bottom: 20px; /* Adjust the value as needed */
+        }
+        .hover-btn:hover {
+            background-color: #F3CA52;
+        }
     </style>
 </head>
 <body>
@@ -316,16 +395,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                        <li><a class="dropdown-item" href="reviews.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -333,12 +412,12 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
-                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnel</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="contacts.html">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -356,10 +435,13 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/Preview-CbW-Placards-18x12in.jpg" class="d-block w-100" alt="...">
+                    <img src="../assets/1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/Preview-CbW-Placards-18x12in 2.jpg" class="d-block w-100" alt="...">
+                    <img src="../assets/2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -373,40 +455,188 @@
         </div>
     </div>
 
+    <!-- CONTENT 1 -->
+    <section class="m-5">
+        <div class="product container-md text-center my-4">
+            <div class="d-flex">
+                <h1 class="mx-4">GIFT A SMILE</h1>
+                <div class="flex-grow-1 mt-4"><hr/></div>
+            </div>
+            <p>CraftedByWin's artisan bouquet paints your story in delicate blooms, each petal a tale of elegance and grace. From
+            youthful buds to mature blossoms, it embodies cherished moments and treasured memories. Embrace this bouquet, for like
+            its blossoms, your life is a masterpiece in constant bloom, waiting to be celebrated, petal by petal.</p>
+        </div>
+        <div class="row justify-content-around">
+            <div class="card col-md-4 col-12 mb-3" style="width: 18rem;">
+                <img src="../assets/mothers.jpg" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mother's Day</h5>
+                    <p class="desc text-start">Honor your mom with CraftedByWin's elegant handcrafted treasures, a perfect tribute to her love and care.</p>
+                </div>
+            </div>
+            <div class="card col-md-4 col-12 mb-3" style="width: 18rem;">
+                <img src="../assets/valentine.jpg" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Valentine's Day</h5>
+                    <p class="desc text-start">Show your love with CraftedByWin's handcrafted roses and gifts, perfect for a thoughtful and romantic Valentine's Day.</p>
+                </div>
+            </div>
+            <div class="card col-md-4 col-12 mb-3" style="width: 18rem;">
+                <img src="../assets/birthday.jpg" class="card-img-top mt-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Birthday</h5>
+                    <p class="desc text-start">Celebrate your special day with a CraftedByWin creation. Each handcrafted piece brings joy and elegance, making your birthday unforgettable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="../html/products.html"><button class="button-55" role="button">TREAT SOMEONE</button></a>
+        </div>
+    </section>
+
+    <!-- CONTENT 2 -->
+    <section class="m-5">
+        <div class="product container-md text-center my-4">
+            <div class="d-flex">
+                <div class="flex-grow-1 mt-4"><hr/></div>
+                <h1 class="mx-4">WRITE YOUR STORY</h1>
+            </div>
+            <form id="reviewForm" class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Write</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Change the anchor tag to a button tag -->
+                            <button class="nav-link" type="submit" id="submit">Submit</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="form-group">
+                            <textarea class="form-control" id="review" rows="3" placeholder="Write your story."></textarea>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("reviewForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+                // JavaScript code to add a new review
+                function addReview(reviewText) {
+                    var reviewsContainer = document.getElementById("reviews");
+
+                    // Create a new card element
+                    var card = document.createElement("div");
+                    card.classList.add("card", "review-card"); // Add review-card class for bottom margin
+
+                    // Create card header
+                    var cardHeader = document.createElement("div");
+                    cardHeader.classList.add("card-header");
+                    cardHeader.textContent = "Review";
+                    card.appendChild(cardHeader);
+
+                    // Create card body
+                    var cardBody = document.createElement("div");
+                    cardBody.classList.add("card-body");
+
+                    // Create blockquote element
+                    var blockquote = document.createElement("blockquote");
+                    blockquote.classList.add("blockquote", "mb-0");
+
+                    // Create paragraph element for review text
+                    var p = document.createElement("p");
+                    p.textContent = reviewText;
+
+                    // Append paragraph to blockquote
+                    blockquote.appendChild(p);
+
+                    // Append blockquote to card body
+                    cardBody.appendChild(blockquote);
+
+                    // Append card body to card
+                    card.appendChild(cardBody);
+
+                    // Append card to reviews container
+                    reviewsContainer.appendChild(card);
+                }
+
+                // Function to handle form submission
+                function handleSubmit(event) {
+                    event.preventDefault(); // Prevent the default form submission behavior
+                    var reviewText = document.getElementById("review").value; // Get the value of the review textarea
+                    addReview(reviewText); // Add the review to the reviews container
+                    document.getElementById("reviewForm").reset(); // Reset the form
+                }
+
+                // Add event listener to the form for form submission
+                document.getElementById("reviewForm").addEventListener("submit", handleSubmit);
+            });
+        });
+    </script>
+     
+    <section class="m-5">
+        <div class="d-flex mb-5">
+            <div class="flex-grow-1 mt-2"><hr/></div>
+            <h1 class="mx-4" style="color: #F3CA52; font-family: 'Freeman';">PEOPLE'S STORIES</h1>
+            <div class="flex-grow-1 mt-2"><hr/></div>
+        </div>
+        <div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Story
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Someone managed to give me a pink rose CraftedbyWin🌹🩷 So kilig!</p>
+                    </blockquote>
+                </div>
+              </div>
+        </div>
+        <div class="reviews" id="reviews">
+        </div>
+    </section>
+    
     <!-- FOOTER -->
     <footer>
         <div class="container-fluid footer">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Navigation</h3>
-                    <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
-                    <p class="text-center"><a href="#"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"><a href="../index.html">Home</a></p>
+                    <p class="text-center"><a href="products.html">Product</a></p>
                     <p class="text-center">
-                        <a href="#">Customers' Review</a><br>
-                        <a href="#">AV/Commercial</a><br>
-                        <a href="#">Events</a>
+                        <a href="reviews.html">Customers' Review</a><br>
+                        <a href="commercial.html">AV/Commercial</a><br>
+                        <a href="events.html">Events</a>
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="about.html">About the Business</a></p>
+                    <p class="text-center"> <a href="personnel.html">Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                    <p class="text-center"> <a href="#"> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="#">Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
             <div class="row mt-4">
                 <div class="col-md-12 text-center">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                        <li><a href="https://www.facebook.com/craftedbywinnie"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="https://www.tiktok.com/@_craftedbywin"><i class="material-icons">tiktok</i></a></li>
                     </ul>
                     <div class="d-inline-block">
-                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                        <p><a href="#" class="text-center" style="font-family: 'Alice',serif;">2024 © CraftedbyWin</a></p>
                     </div>
                 </div>
             </div>

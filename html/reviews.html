@@ -346,18 +346,22 @@
         .footer {
             background-color: #fff; 
             padding: 30px 0;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer h3 {
             margin-top: 20px; 
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer p {
             margin: 5px 0; 
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer ul {
             list-style: none;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer ul li {
@@ -472,7 +476,7 @@
         /*reviews2*/
         .container-reviews{
             color: #0e0d0d;
-            background-image: url(../assets/BG-4.jpg);
+            /* background-image: url(../assets/BG-4.jpg); */
             background-blend-mode: overlay;
             background-size: cover;
             background-repeat: no-repeat; 
@@ -481,7 +485,9 @@
         }
 
         p{
-            font-size: 20px;
+            font-size: 25px;
+            text-align: justify;
+            font-family: 'Alice',serif;
         }
 
         h1{
@@ -518,15 +524,15 @@
         }
 
         .three {
-            color: rgb(251, 255, 120);
+            color:#F3CA52;
         }
 
         .four {
-            color: rgb(255, 255, 0);
+            color: #F3CA52;
         }
 
         .five {
-            color: rgb(24, 159, 14);
+            color: #F3CA52;
         }
 
         textarea {
@@ -541,49 +547,61 @@
         }
 
         .button-30 {
-        align-items: center;
-        appearance: none;
-        background-color: #c4b61dd3;
-        border-radius: 4px;
-        border-width: 0;
-        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-        box-sizing: border-box;
-        color: #36395A;
-        cursor: pointer;
-        display: inline-flex;
-        font-family: "Alice", serif;
-        height: 48px;
-        justify-content: center;
-        line-height: 1;
-        list-style: none;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-right: 16px;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transition: box-shadow .15s,transform .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        will-change: box-shadow,transform;
-        font-size: 18px;
+            align-items: center;
+            appearance: none;
+            background-color: #c4b61dd3;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395A;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "Alice", serif;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
         }
 
         .button-30:focus {
-        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
         }
 
         .button-30:hover {
-        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-        transform: translateY(-2px);
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            transform: translateY(-2px);
         }
 
         .button-30:active {
-        box-shadow: #3a3a82 0 3px 7px inset;
-        transform: translateY(2px);
+            box-shadow: #3a3a82 0 3px 7px inset;
+            transform: translateY(2px);
         }
+
+        h2{
+            font-family: 'Adlery Pro', sans-serif;
+            font-weight: bold;
+            color: #F3CA52;
+            font-size: 80px;
+            letter-spacing: 2px; 
+            background: linear-gradient(45deg, #F3CA52, #E89A28); 
+            -webkit-background-clip: text; 
+            color: transparent; 
+        }
+
 
     
     </style>
@@ -608,9 +626,9 @@
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="#">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
+                                        <li><a class="dropdown-item" href="reviews.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -618,12 +636,12 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">About the Business</a></li>
-                                        <li><a class="dropdown-item" href="#">Personnel</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnel</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
+                                    <a class="nav-link" href="contacts.html">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -637,12 +655,9 @@
         <div class="main container-fluid px-0">
             <div class="container text-center">
                 <a class="navbar-brand" href="#"><img src="../assets/CbW-StickerIMG.png" width="120"></a>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <h1 class="text-md-center">Win the hearts of your</h1>
-                    </div>
-                </div>
+                <br><br>
+                <h2>Our Happy Clients</h2>
+        <p class="description">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion such as anniversaries, birthdays, Mother's Day, Father's Day, Valentines, Teacher's Day and many more.</p>
             </div>
         </div>
     </div>
@@ -650,8 +665,6 @@
     
     <!-- Main Container for Clients Review -->
     <div class="container">
-        <h2>Our Happy Clients</h2>
-        <p class="description">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion such as anniversaries, birthdays, Mother's Day, Father's Day, Valentines, Teacher's Day and many more.</p>
 
         <!-- Clients Review Section -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -672,7 +685,7 @@
                         </ul>
                     </div>
                     <article>
-                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</p>
+                        <p>C𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝑬𝒕𝒆𝒓𝒏𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕</p>
                         <p>Jan 01, 2023</p>
                     </article>
                 </div>
@@ -694,7 +707,7 @@
                         </ul>
                     </div>
                     <article>
-                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>C𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝒑𝒊𝒏𝒌 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
                         <p>Jun 15, 2023</p>
                     </article>
                 </div>
@@ -716,7 +729,7 @@
                         </ul>
                     </div>
                     <article>
-                        <p>𝒄𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
+                        <p>C𝒖𝒔𝒕𝒐𝒎𝒊𝒛𝒆𝒅 𝐂𝐡𝐨𝐜𝐨𝐥𝐚𝐭𝐞 𝒃𝒐𝒖𝒒𝒖𝒆𝒕!</p>
                         <p>Jan 13, 2023</p>
                     </article>
                 </div>
@@ -754,6 +767,8 @@
         <div class="reviews" id="reviews">
         </div>
     </div>
+</div>
+</div>
 
     
     <footer>
@@ -761,34 +776,34 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Navigation</h3>
-                    <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
-                    <p class="text-center"><a href="#"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"><a href="index.html">Home</a></p>
+                    <p class="text-center"><a href="html/products.html">Product</a></p>
                     <p class="text-center"> 
                         <a href="#">Customers' Review</a><br>
                         <a href="#">AV/Commercial</a><br>
                         <a href="#">Events</a>
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-12 col-12 text-center">
+                <div class="col-md-4 col-sm-12 col-12 text-center" style="font-family: 'Freeman',sans-serif;">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="html/about.html"> About the Business</a></p>
+                    <p class="text-center"> <a href="html/personnel.html"> Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> CraftedbyWin</a></p>
+                    <p class="text-center"> <a href="#"> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="https://www.facebook.com/kainosweng">Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
             <div class="row mt-4">
                 <div class="col-md-12 text-center">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-                        <li><a href="#"><i class="material-icons">tiktok</i></a></li>
+                        <li><a href="https://www.facebook.com/craftedbywinnie"><i class="material-icons">facebook</i></a></li>
+                        <li><a href="https://www.tiktok.com/@_craftedbywin"><i class="material-icons">tiktok</i></a></li>
                     </ul>
                     <div class="d-inline-block">
-                        <p><a href="#" class="text-center">2024 © CraftedbyWin</a></p>
+                        <p><a href="#" class="text-center" style="font-family: 'Alice',serif;">2024 © CraftedbyWin</a></p>
                     </div>
                 </div>
             </div>
