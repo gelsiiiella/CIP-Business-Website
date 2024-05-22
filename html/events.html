@@ -162,12 +162,22 @@
             text-align: justify;
             font-family: 'Alice',serif;
             color:#333;
-            font-size: 22px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .desc{
+            text-align: justify;
+            font-family: 'Alice',serif;
+            color:#333;
+            font-size: 18px;
+            text-align: justify;
+
         }
         .card-title{
+            text-align: center;
             font-family: 'Adlery Pro', sans-serif;
             font-size: 30px;
-            text-align: center;
+            color: #FF5BAE;
         }
         .button-add {
             background: #fff;
@@ -231,6 +241,47 @@
             transform: translateY(.125rem);
         }
 
+        .button-55 {
+            align-self: center;
+            background-color: #fff;
+            background-image: none;
+            background-position: 0 90%;
+            background-repeat: repeat no-repeat;
+            background-size: 4px 3px;
+            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+            border-style: solid;
+            border-width: 2px;
+            box-shadow: rgba(202, 142, 224, 0.2) 15px 28px 25px -18px;
+            box-sizing: border-box;
+            color: #41403e;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Neucha, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 23px;
+            outline: none;
+            padding: .75rem;
+            text-decoration: none;
+            transition: all 235ms ease-in-out;
+            border-bottom-left-radius: 15px 255px;
+            border-bottom-right-radius: 225px 15px;
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-55:hover {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+            transform: translate3d(0, 2px, 0);
+        }
+
+         .button-55:focus {
+            box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+        }
+
         .price {
             display: flex;
             align-items: center;
@@ -262,22 +313,27 @@
         .footer {
             background-color: #fff; 
             padding: 30px 0;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer h3 {
             margin-top: 20px; 
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer p {
             margin: 5px 0; 
+            
         }
 
         .footer ul {
             list-style: none;
+            font-family: 'Freeman',sans-serif;
         }
 
         .footer ul li {
             margin-bottom: 5px; 
+            
         }
 
         .social-icons {
@@ -320,6 +376,9 @@
         }
         .review-card {
             margin-bottom: 20px; /* Adjust the value as needed */
+        }
+        .hover-btn:hover {
+            background-color: #F3CA52;
         }
     </style>
 </head>
@@ -412,26 +471,26 @@
                 <img src="../assets/mothers.jpg" class="card-img-top mt-2" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Mother's Day</h5>
-                    <p class="text-start">Honor your mom with CraftedByWin's elegant handcrafted treasures, a perfect tribute to her love and care.</p>
+                    <p class="desc text-start">Honor your mom with CraftedByWin's elegant handcrafted treasures, a perfect tribute to her love and care.</p>
                 </div>
             </div>
             <div class="card col-md-4 col-12 mb-3" style="width: 18rem;">
                 <img src="../assets/valentine.jpg" class="card-img-top mt-2" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Valentine's Day</h5>
-                    <p class="text-start">Show your love with CraftedByWin's handcrafted roses and gifts, perfect for a thoughtful and romantic Valentine's Day.</p>
+                    <p class="desc text-start">Show your love with CraftedByWin's handcrafted roses and gifts, perfect for a thoughtful and romantic Valentine's Day.</p>
                 </div>
             </div>
             <div class="card col-md-4 col-12 mb-3" style="width: 18rem;">
                 <img src="../assets/birthday.jpg" class="card-img-top mt-2" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Birthday</h5>
-                    <p class="text-start">Celebrate your special day with a CraftedByWin creation. Each handcrafted piece brings joy and elegance, making your birthday unforgettable.</p>
+                    <p class="desc text-start">Celebrate your special day with a CraftedByWin creation. Each handcrafted piece brings joy and elegance, making your birthday unforgettable.</p>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <a href="../html/products.html" class="btn btn-primary" style="background-color: #FF5BAE; border-color: #FF5BAE;">TREAT SOMEONE</a>
+            <a href="../html/products.html"><button class="button-55" role="button">TREAT SOMEONE</button></a>
         </div>
     </section>
 
@@ -550,8 +609,8 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Navigation</h3>
-                    <p class="text-center"><a href="../index.html"><i class="fa-solid fa-home"></i> Home</a></p>
-                    <p class="text-center"><a href="products.html"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"><a href="../index.html">Home</a></p>
+                    <p class="text-center"><a href="products.html">Product</a></p>
                     <p class="text-center">
                         <a href="reviews.html">Customers' Review</a><br>
                         <a href="commercial.html">AV/Commercial</a><br>
@@ -560,13 +619,13 @@
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="about.html"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="personnel.html"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="about.html">About the Business</a></p>
+                    <p class="text-center"> <a href="personnel.html">Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-envelope"></i> Winnie Garlan</a></p>
+                    <p class="text-center"> <a href="#"> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="#">Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
