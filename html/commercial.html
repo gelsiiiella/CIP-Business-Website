@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crafted by Win</title>
-    <link rel="icon" type="image/png" href="assets/CbW-StickerIMG.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../assets/CbW-StickerIMG.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <!--FONTS-->
@@ -15,8 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Freckle+Face&family=Frijole&family=Graduate&family=IM+Fell+Double+Pica+SC&family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Kode+Mono:wght@400..700&family=Lacquer&family=Lumanosimo&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Shadows+Into+Light&family=Teko:wght@300&family=Tektur:wght@400;700&display=swap" rel="stylesheet">
     <!--font-family: 'Adlery Pro', sans-serif;-->
     <link href="https://fonts.cdnfonts.com/css/adlery-pro" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
@@ -24,13 +26,11 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden; 
-            background: url(assets/BG-4.jpg);
             background-blend-mode: overlay;
             background-size: cover;
             background-repeat: no-repeat; 
-            background-position: center; 
-            height: 100vh; 
-            margin-top: 400px; 
+            background-position: center;  
+            margin-top: 270px; 
         }
         .navbar-brand {
             margin-right: auto;
@@ -137,7 +137,6 @@
             height:50px;
             overflow:hidden;
             margin-left: 1rem;
-            margin-top: -110px;
         }
 
         .animation > div > div {
@@ -164,7 +163,6 @@
 
     p {
         text-align: justify;
-        font-family: 'Alice',serif;
     }
     .button-add {
         background: #fff;
@@ -173,10 +171,10 @@
         border-style: solid;
         border-width: .125rem;
         box-sizing: border-box;
-        color:  #FF5BAE;
+        color: #212121;
         cursor: pointer;
         display: inline-block;
-        font-family: Neucha, sans-serif;
+        font-family: 'Freeman',sans-serif;
         font-size: 0.9rem;
         font-weight: 700;
         letter-spacing: -.01em;
@@ -199,7 +197,7 @@
         .button-add:not(:disabled):hover:active {
             transform: scale(1.05) translateY(.125rem);
             color: #fff;
-            background-color:  #FF5BAE;
+            background-color: #212121;
         }
 
         .button-add:focus {
@@ -240,48 +238,21 @@
         a{
             font-family: 'Freeman',sans-serif;
         }
-
-        /*best-sellers*/
-        .card-title{
-            font-family: 'Adlery Pro', sans-serif;
-            font-size: 40px;
-            text-align: center;
-        }
-        .card-text{
-            font-family:"Alice", serif;
-        }
-        .card img{
-            width:80%;
-            height:auto;
-            margin: auto;
-        }
-        .product h1 {
-            font-family: 'Adlery Pro', sans-serif;
+        .product h1{
+            font-family: 'Freeman',sans-serif;
             font-weight: bold;
-            color: #F3CA52;
-            font-size: 80px;
-            margin-top: 50px;
-            letter-spacing: 2px; 
-            background: linear-gradient(45deg, #F3CA52, #E89A28); 
-            -webkit-background-clip: text; 
-            color: transparent; 
-
+            color:#F3CA52;
+            font-size: 60px;
         }
-
         .goal{
             margin-top:200px ;
             margin-bottom: 150px;
         }
         .obj h1{
-            font-family: 'Adlery Pro', sans-serif;
+            font-family: 'Freeman',sans-serif;
             font-weight: bold;
-            color: #F3CA52;
-            font-size: 80px;
-            margin-top: -30px;
-            letter-spacing: 2px; 
-            background: linear-gradient(45deg, #F3CA52, #E89A28); 
-            -webkit-background-clip: text; 
-            color: transparent; 
+            color:#F3CA52;
+            font-size: 60px;
         }
         .footer {
             background-color: #fff; 
@@ -295,7 +266,6 @@
 
         .footer p {
             margin: 5px 0; 
-            font-family: 'Freeman',sans-serif;
         }
 
         .footer ul {
@@ -304,7 +274,6 @@
 
         .footer ul li {
             margin-bottom: 5px; 
-            font-family: 'Freeman',sans-serif;
         }
 
         .social-icons {
@@ -339,101 +308,46 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: #F3CA52;
         }
+        h1{
+            font-family: 'Alice',serif;
+            font-size: 90px;
+            text-align: left;
+            margin-left: 270px;
+            animation: fadeIn 0.5s ease-in-out, colorChange 3s infinite ease-in-out;
+        }
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+        @keyframes colorChange {
+        0% {
+            color: lightblue;
+        }
+        33% {
+            color: #FF5BAE;
+        }
+        66% {
+            color: #F3CA52;
+        }
+        100% {
+            color: lightblue; 
+        }
+    }
+    
+        
 
         
-        /*history*/
-        .text1{
-            font-family: "Alice", serif;
-            font-size: 20px;
-        }
 
-        .text2{
-            font-family: 'Adlery Pro', sans-serif;
-            font-size: 40px;
-        }
+       
 
-        .text3{
-            font-size: 25px;
-            font-family: "Alice", serif;
-            text-align: justify;
-        }
-
-        .history{
-            margin-top: 150px;
-        }
-
-        #img1{
-            border-radius: 100px;
-            border: solid 2px;
-            align-self: center;
-            background-color: #512f2f5a;
-            background-image: none;
-            background-position: 0 90%;
-            background-repeat: repeat no-repeat;
-            background-size: 4px 3px;
-            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-            border-style: solid;
-            border-width: 5px;
-            box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-            box-sizing: border-box;
-            color: #41403e;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Neucha, sans-serif;
-            font-size: 1rem;
-            line-height: 23px;
-            outline: none;
-            text-decoration: none;
-            transition: all 235ms ease-in-out;
-            border-bottom-left-radius: 15px 255px;
-            border-bottom-right-radius: 225px 15px;
-            border-top-left-radius: 255px 15px;
-            border-top-right-radius: 15px 225px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
-
-        .button-55 {
-            align-self: center;
-            background-color: #fff;
-            background-image: none;
-            background-position: 0 90%;
-            background-repeat: repeat no-repeat;
-            background-size: 4px 3px;
-            border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-            border-style: solid;
-            border-width: 2px;
-            box-shadow: rgba(202, 142, 224, 0.2) 15px 28px 25px -18px;
-            box-sizing: border-box;
-            color: #41403e;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Neucha, sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 23px;
-            outline: none;
-            padding: .75rem;
-            text-decoration: none;
-            transition: all 235ms ease-in-out;
-            border-bottom-left-radius: 15px 255px;
-            border-bottom-right-radius: 225px 15px;
-            border-top-left-radius: 255px 15px;
-            border-top-right-radius: 15px 225px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
-
-        .button-55:hover {
-            box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-            transform: translate3d(0, 2px, 0);
-        }
-
-         .button-55:focus {
-            box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-        }
+       
+        
 
     </style>
 </head>
@@ -449,18 +363,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item1 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="html/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
+                                    <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Products
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="html/customer_review.html">Customers' Review</a></li>
-                                        <li><a class="dropdown-item" href="html/commercial.html">AV/Commercial</a></li>
-                                        <li><a class="dropdown-item" href="html/events.html">Events</a></li>
+                                        <li><a class="dropdown-item" href="customer_review.html">Customers' Review</a></li>
+                                        <li><a class="dropdown-item" href="commercial.html">AV/Commercial</a></li>
+                                        <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item1 dropdown">
@@ -468,13 +380,12 @@
                                         About
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="html/about.html">About the Business</a></li>
-                                        <li><a class="dropdown-item" href="html/personnel.html">Personnel</a></li>
-
+                                        <li><a class="dropdown-item" href="about.html">About the Business</a></li>
+                                        <li><a class="dropdown-item" href="personnel.html">Personnel</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="html/contacts.html">Contact Us</a>
+                                    <a class="nav-link" href="#">Contact Us</a>
                                 </li>
                                 <div class="shop-icon">
                                     <a href="#"><i class="material-icons">shopping_basket</i></a> 
@@ -485,144 +396,40 @@
                 </nav>
             </div>
         </header>
-        <div class="main container-fluid px-0">
-            <div class="container text-center">
-                <a class="navbar-brand" href="#"><img src="assets/CbW-StickerIMG.png" width="120"></a>
-                <br><br>
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <h1 class="text-md-center">Win the hearts of your</h1>
-                        <div class="col-md-12">
-                            <div class="container1 row-md">
-                                <div class="animation">
-                                    <div class="first col-md-12">
-                                        <div class="container-md">FRIENDS</div>
-                                    </div>
-                                    <div class="second col-md-12">
-                                        <div class="container-md">RELATIVES</div>
-                                    </div>
-                                    <div class="third col-md-12">
-                                        <div class="container-md">KIDS</div>
-                                    </div>
-                                    <div class="fourth col-md-12">
-                                        <div class="container-md">WIFE</div>
-                                    </div>
-                                    <div class="fifth col-md-12">
-                                        <div class="container-md">LOVED ONES</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e3dedf9c-fffd-4404-9c1a-1da6e70ff247";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <div class="product container-md text-center my-4">
-        <h1 class="text-md-center">BEST SELLERS</h1>
-    </div>
-    <div class="products container mt-5 bg-white">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Red and White Rose.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Red and White Roses</h5>
-                        <p class="card-text">A red and white rose bouquet is a classic and elegant arrangement featuring the rich, passionate red roses intermingled with the pure, serene white roses. Symbolizing unity, love, and purity, this stunning bouquet is perfect for romantic gestures, weddings, or any occasion that calls for a beautiful expression of deep emotions and harmony.</b></i></p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 320.00</strong>
-                            <a class="button-add" href="#" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Sunshine_Bouquet.jpg-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Sunshine Bouquet</h5>
-                        <p class="card-text">A sunflower-only bouquet is a striking arrangement composed entirely of bright yellow sunflowers with dark centers, symbolizing adoration and positivity. This cheerful bouquet radiates warmth and is perfect for celebrating special occasions or simply brightening someone's day.<br><br></p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 350.00</strong>
-                            <a class="button-add" href="#" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card mb-4">
-                    <img src="assets/Tulips_Bouquet-removebg-preview.png" class="card-img-top img-fluid" alt="Product Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Tulips Bouquet</h5>
-                        <p class="card-text">A tulip bouquet is a delightful arrangement featuring the elegant, cup-shaped blooms of tulips in a variety of vibrant colors. Symbolizing perfect love and cheerfulness, this bouquet adds a touch of sophistication and joy to any occasion, making it an ideal gift for expressing heartfelt emotions or celebrating special moments.</p>
-                        <div class="price d-flex justify-content-between align-items-center">
-                            <strong>PHP 220.00</strong>
-                            <a class="button-add" href="../CIP-Business-Website/html/about.html" role="button">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="history container-fluid">
+   
+    <div class="container-fluid">
         <div>
             <div class="row m-5"> 
-                <div class="col-md-5 d-flex justify-content-center">
-                    <img src="../assets/download.png" class="w-75" id="img1">
+                <div class="m-3 col-md-12 col-12">
+                    <h1>CRAFTED BY WIN <br>IS ON <br>TIKTOK</h1>
+                    
                 </div>
-                <div class="m-3 col-md-6 col-12">
-                    <div class="d-flex">
-                        <h1 class="mx-2 text1">Our story</h1>
-                        <div class="flex-grow-1 mb-3"><hr/></div>
-                    </div>
-                    <p class="text2">ABOUT CRAFT BY WIN</p>
-                    <h5 class="text3 ps-5">Crafted by Win is the best-rated handcrafted satin ribbon  flower in the Philippines.</h5>
-                    <br>
-                    <h5  class="text3 ps-5">Bring love and smile by sending gifts and handcrafted flowers to your loved ones. Perfect for any occasion.</h5>
-
-                    <div class="d-flex justify-content-end col-10 mt-4">
-                        <div>
-                            <a href="../html/about.html"><button class="button-55" role="button">Learn more</button></a>
+                <div class="row col-12">
+                   
+                    <div class="row col-12">
+                       
+                        <div class="col-md-4 d-flex justify-content-md-end justify-content-center mb-5">
+                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>  
+            </div>  
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 backdrop-filter p-5">
+                <div class="row d-flex justify-content-center"> 
+                    
+        </div>
     </div>
     
-    <div class="goal main container-fluid px-0">
+    <div class="goal main container-fluid px-0 mt-5 ">
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/Preview-CbW-Placards-18x12in.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/Preview-CbW-Placards-18x12in 2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="obj col-lg-6 col-12">
-                    <h1 class="text-md-center">MISSION | VISION | GOAL </h1>
-                    <p style="font-family: 'Alice',serif;text-align: center;"> <i>Bringing love and smile in every craft.</i> </p>
-                    <p>Crafting satin flowers is a delicate art form that goes beyond mere creation; it's a journey of transforming simple materials into timeless elegance. 
-                    <p>With each petal meticulously shaped and every stitch carefully placed, our satin flower handcrafts are imbued with a sense of grace and sophistication.</p> 
-                    <p>We believe in the power of beauty to uplift spirits and bring joy, and so, with every flower we craft, our aim is to evoke feelings of wonder and delight.</p>
-                    <p>Our dedication to excellence means that each satin flower is not just a piece of décor, but a symbol of love and care. </p>
-                    <p>Whether enhancing a special occasion, or simply brightening up a room, our handcrafted satin flowers carry with them the essence of craftsmanship and the warmth of human touch.</p>
+                <div class="obj m-3 col-md-12 col-12">
+                    
                 </div>
             </div>
         </div>
@@ -633,23 +440,23 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Navigation</h3>
-                    <p class="text-center"><a href="index.html"><i class="fa-solid fa-home"></i> Home</a></p>
-                    <p class="text-center"><a href="html/products.html"><i class="fa-solid fa-envelope"></i> Product</a></p>
+                    <p class="text-center"><a href="../index.html"> Home</a></p>
+                    <p class="text-center"><a href="products.html"></i> Product</a></p>
                     <p class="text-center"> 
                         <a href="#">Customers' Review</a><br>
                         <a href="#">AV/Commercial</a><br>
                         <a href="#">Events</a>
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-12 col-12 text-center" style="font-family: 'Freeman',sans-serif;">
+                <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">About</h3>
-                    <p class="text-center"> <a href="html/about.html"><i class="fa-solid fa-phone"></i> About the Business</a></p>
-                    <p class="text-center"> <a href="html/personnel.html"><i class="fa-solid fa-envelope"></i> Personnel</a></p>
+                    <p class="text-center"> <a href="about.html"> About the Business</a></p>
+                    <p class="text-center"> <a href="personnel.html"> Personnel</a></p>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 text-center">
                     <h3 class="text-center">Contact Us</h3>
-                    <p class="text-center"> <a href="#"><i class="fa-solid fa-phone"></i> +63 905 400 9590</a></p>
-                    <p class="text-center"> <a href="https://www.facebook.com/kainosweng"><i class="fa-solid fa-envelope"></i>Winnie Garlan</a></p>
+                    <p class="text-center"> <a href="#"> +63 905 400 9590</a></p>
+                    <p class="text-center"> <a href="#">Winnie Garlan</a></p>
                 </div>
             </div>
             <hr>
@@ -668,3 +475,4 @@
     </footer>
 </body>
 </html>
+
