@@ -176,8 +176,8 @@
         cursor: pointer;
         display: inline-block;
         font-family: Neucha, sans-serif;
-        font-size: 0.9rem;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 150px;
         letter-spacing: -.01em;
         line-height: 1.3;
         padding: .875rem 1.125rem;
@@ -235,14 +235,14 @@
             font-family: 'Alice',serif;
         }
 
-        .price {
+        /* .price {
             display: flex;
             align-items: center;
         }
 
         .price > * {
             margin-left: 20px;
-        }
+        } */
         a{
             font-family: 'Freeman',sans-serif;
         }
@@ -780,7 +780,7 @@
                 let receiptItem = document.createElement('div');
                 receiptItem.className = 'receipt-item';
                 receiptItem.innerHTML = `${item.name} (PHP ${item.price.toFixed(2)} x ${item.quantity}) = PHP ${item.itemTotal.toFixed(2)}
-                                          <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Remove</button>`;
+                                        <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})"><i class="fa-solid fa-trash"></i></button>`;
                 receiptContainer.appendChild(receiptItem);
             });
     
